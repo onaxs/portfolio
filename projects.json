@@ -1,0 +1,1342 @@
+{
+  "mini-project": {
+    "tag_order": [
+      "led_art",
+      "bicycles",
+      "fabrication"
+    ],
+    "groups": {
+      "led_art": [
+        {
+          "slug": "led-mushroom",
+          "title": "LED Mushroom",
+          "thumbnail": "content/led-mushroom/images/mushroom-glow.gif",
+          "caption": "WiFi music-reactive sculpture, 2022",
+          "section": "mini-project",
+          "tags": [
+            "led_art"
+          ],
+          "employer": null,
+          "date_start": "2022-01",
+          "date_end": "2022-06",
+          "order": 1,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Construction",
+              "anchor": "led-mushroom-construction"
+            },
+            {
+              "text": "Glowing",
+              "anchor": "led-mushroom-glowing"
+            }
+          ],
+          "images": [
+            "content/led-mushroom/images/mushroom-cardboard.png",
+            "content/led-mushroom/images/mushroom-glow.gif"
+          ]
+        },
+        {
+          "slug": "led-eye",
+          "title": "LED Eye",
+          "thumbnail": "content/led-eye/images/eye-led.gif",
+          "caption": "Music reactive LED sculpture, 2021",
+          "section": "mini-project",
+          "tags": [
+            "led_art"
+          ],
+          "employer": null,
+          "date_start": "2021-06",
+          "date_end": "2021-12",
+          "order": 2,
+          "visible": true,
+          "headings": [],
+          "images": [
+            "content/led-eye/images/eye-led.gif"
+          ]
+        },
+        {
+          "slug": "tip31c",
+          "title": "TIP31C Audio Visualizer",
+          "thumbnail": "content/tip31c/images/tip31c-glow.gif",
+          "caption": "NPN transistor audio visualization, 2019",
+          "section": "mini-project",
+          "tags": [
+            "led_art"
+          ],
+          "employer": null,
+          "date_start": "2019-06",
+          "date_end": "2019-12",
+          "order": 3,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Circuit",
+              "anchor": "tip31c-circuit"
+            },
+            {
+              "text": "In Action",
+              "anchor": "tip31c-in-action"
+            }
+          ],
+          "images": [
+            "content/tip31c/images/tip31c-diagram.png",
+            "content/tip31c/images/tip31c-glow.gif"
+          ]
+        }
+      ],
+      "bicycles": [
+        {
+          "slug": "bike-welding-fixture",
+          "title": "Bicycle Welding Fixture",
+          "thumbnail": null,
+          "caption": "Frame building jig, 2026",
+          "section": "mini-project",
+          "tags": [
+            "bicycles",
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2026-01",
+          "date_end": "present",
+          "order": 6,
+          "visible": false,
+          "headings": [
+            {
+              "text": "Prototyping",
+              "anchor": "bike-welding-fixture-prototyping"
+            },
+            {
+              "text": "Fabrication",
+              "anchor": "bike-welding-fixture-fabrication"
+            },
+            {
+              "text": "Use & Performance",
+              "anchor": "bike-welding-fixture-use---performance"
+            }
+          ],
+          "images": []
+        },
+        {
+          "slug": "cargo-bike",
+          "title": "Building a Cargo Bike",
+          "thumbnail": "content/cargo-bike/images/cargo_bike_partial_asm.png",
+          "caption": "Steel cargo bike from scratch, 2025",
+          "section": "mini-project",
+          "tags": [
+            "bicycles"
+          ],
+          "employer": null,
+          "date_start": "2025-01",
+          "date_end": "present",
+          "order": 1,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Design",
+              "anchor": "cargo-bike-design"
+            },
+            {
+              "text": "Fabrication Jig",
+              "anchor": "cargo-bike-fabrication-jig"
+            },
+            {
+              "text": "Welding",
+              "anchor": "cargo-bike-welding"
+            },
+            {
+              "text": "Assembly",
+              "anchor": "cargo-bike-assembly"
+            }
+          ],
+          "images": [
+            "content/cargo-bike/images/cargo_bike_cad_ss.png",
+            "content/cargo-bike/images/cargo_bike_jig.png",
+            "content/cargo-bike/images/cargo_bike_partial_asm.png",
+            "content/cargo-bike/images/welding-cargo.png"
+          ]
+        },
+        {
+          "slug": "track-bike",
+          "title": "Makino Track Bike",
+          "thumbnail": "content/track-bike/images/makino_track_bicycle.png",
+          "caption": "My lovely track bike, 2021",
+          "section": "mini-project",
+          "tags": [
+            "bicycles"
+          ],
+          "employer": null,
+          "date_start": "2021-01",
+          "date_end": "2021-06",
+          "order": 5,
+          "visible": true,
+          "headings": [],
+          "images": [
+            "content/track-bike/images/makino_track_bicycle.png"
+          ]
+        },
+        {
+          "slug": "ebike",
+          "title": "High School E-Bike",
+          "thumbnail": "content/ebike/images/ebike-photo.png",
+          "caption": "Electric conversion build, 2020",
+          "section": "mini-project",
+          "tags": [
+            "bicycles"
+          ],
+          "employer": null,
+          "date_start": "2020-06",
+          "date_end": "2020-12",
+          "order": 3,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Assembly",
+              "anchor": "ebike-assembly"
+            },
+            {
+              "text": "Wiring",
+              "anchor": "ebike-wiring"
+            },
+            {
+              "text": "Complete",
+              "anchor": "ebike-complete"
+            }
+          ],
+          "images": [
+            "content/ebike/images/ebike-asm.png",
+            "content/ebike/images/ebike-photo.png",
+            "content/ebike/images/ebike-wiring.png"
+          ]
+        },
+        {
+          "slug": "craigslist-bikes",
+          "title": "Craigslist Bike Restorations",
+          "thumbnail": "content/craigslist-bikes/images/painted_puch_roadbike.png",
+          "caption": "Various restorations, 2020",
+          "section": "mini-project",
+          "tags": [
+            "bicycles"
+          ],
+          "employer": null,
+          "date_start": "2020-01",
+          "date_end": "2020-12",
+          "order": 4,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Puch Roadbike Rebuild",
+              "anchor": "craigslist-bikes-puch-roadbike-rebuild"
+            }
+          ],
+          "images": [
+            "content/craigslist-bikes/images/painted_puch_roadbike.png",
+            "content/craigslist-bikes/images/painting_puch_roadbike.png",
+            "content/craigslist-bikes/images/puch_roadbike_rebuild.png"
+          ]
+        },
+        {
+          "slug": "carbon-seatpost",
+          "title": "Carbon Fiber Seatpost",
+          "thumbnail": "content/carbon-seatpost/images/carbon-seatpost.png",
+          "caption": "First CAD project — 3D print core + CF layup, 2019",
+          "section": "mini-project",
+          "tags": [
+            "bicycles",
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2019-01",
+          "date_end": "2019-06",
+          "order": 2,
+          "visible": true,
+          "headings": [
+            {
+              "text": "3D Printed Core",
+              "anchor": "carbon-seatpost-3d-printed-core"
+            },
+            {
+              "text": "Carbon Fiber Layup",
+              "anchor": "carbon-seatpost-carbon-fiber-layup"
+            },
+            {
+              "text": "Finished on the Bike",
+              "anchor": "carbon-seatpost-finished-on-the-bike"
+            }
+          ],
+          "images": [
+            "content/carbon-seatpost/images/carbon-seatpost.png",
+            "content/carbon-seatpost/images/fuji-asm.png",
+            "content/carbon-seatpost/images/seatpost-3dprint.png"
+          ]
+        }
+      ],
+      "fabrication": [
+        {
+          "slug": "airpump",
+          "title": "Experimental Air Pump",
+          "thumbnail": null,
+          "caption": "Custom pump design, 2026",
+          "section": "mini-project",
+          "tags": [
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2026-01",
+          "date_end": "present",
+          "order": 3,
+          "visible": false,
+          "headings": [],
+          "images": []
+        },
+        {
+          "slug": "bike-welding-fixture",
+          "title": "Bicycle Welding Fixture",
+          "thumbnail": null,
+          "caption": "Frame building jig, 2026",
+          "section": "mini-project",
+          "tags": [
+            "bicycles",
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2026-01",
+          "date_end": "present",
+          "order": 6,
+          "visible": false,
+          "headings": [
+            {
+              "text": "Prototyping",
+              "anchor": "bike-welding-fixture-prototyping"
+            },
+            {
+              "text": "Fabrication",
+              "anchor": "bike-welding-fixture-fabrication"
+            },
+            {
+              "text": "Use & Performance",
+              "anchor": "bike-welding-fixture-use---performance"
+            }
+          ],
+          "images": []
+        },
+        {
+          "slug": "solar-longboard",
+          "title": "Solar Electric Longboard",
+          "thumbnail": "content/solar-longboard/images/solar-longboard.png",
+          "caption": "Solar charged electric longboard, 2019",
+          "section": "mini-project",
+          "tags": [
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2019-06",
+          "date_end": "2019-12",
+          "order": 2,
+          "visible": true,
+          "headings": [],
+          "images": [
+            "content/solar-longboard/images/solar-longboard.png"
+          ]
+        },
+        {
+          "slug": "carbon-seatpost",
+          "title": "Carbon Fiber Seatpost",
+          "thumbnail": "content/carbon-seatpost/images/carbon-seatpost.png",
+          "caption": "First CAD project — 3D print core + CF layup, 2019",
+          "section": "mini-project",
+          "tags": [
+            "bicycles",
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2019-01",
+          "date_end": "2019-06",
+          "order": 2,
+          "visible": true,
+          "headings": [
+            {
+              "text": "3D Printed Core",
+              "anchor": "carbon-seatpost-3d-printed-core"
+            },
+            {
+              "text": "Carbon Fiber Layup",
+              "anchor": "carbon-seatpost-carbon-fiber-layup"
+            },
+            {
+              "text": "Finished on the Bike",
+              "anchor": "carbon-seatpost-finished-on-the-bike"
+            }
+          ],
+          "images": [
+            "content/carbon-seatpost/images/carbon-seatpost.png",
+            "content/carbon-seatpost/images/fuji-asm.png",
+            "content/carbon-seatpost/images/seatpost-3dprint.png"
+          ]
+        },
+        {
+          "slug": "longboard",
+          "title": "DIY Longboard",
+          "thumbnail": "content/longboard/images/diy-board.png",
+          "caption": "Hand laminated plywood, 2019",
+          "section": "mini-project",
+          "tags": [
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2019-01",
+          "date_end": "2019-06",
+          "order": 1,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Lamination & Shaping",
+              "anchor": "longboard-lamination---shaping"
+            },
+            {
+              "text": "Finished",
+              "anchor": "longboard-finished"
+            }
+          ],
+          "images": [
+            "content/longboard/images/diy-board-stain.png",
+            "content/longboard/images/diy-board.png",
+            "content/longboard/images/skateboards.png"
+          ]
+        }
+      ]
+    },
+    "thumbnail_strip": [
+      {
+        "slug": "cargo-bike",
+        "title": "Building a Cargo Bike",
+        "thumbnail": "content/cargo-bike/images/cargo_bike_partial_asm.png",
+        "caption": "Steel cargo bike from scratch, 2025",
+        "section": "mini-project",
+        "tags": [
+          "bicycles"
+        ],
+        "employer": null,
+        "date_start": "2025-01",
+        "date_end": "present",
+        "order": 1,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Design",
+            "anchor": "cargo-bike-design"
+          },
+          {
+            "text": "Fabrication Jig",
+            "anchor": "cargo-bike-fabrication-jig"
+          },
+          {
+            "text": "Welding",
+            "anchor": "cargo-bike-welding"
+          },
+          {
+            "text": "Assembly",
+            "anchor": "cargo-bike-assembly"
+          }
+        ],
+        "images": [
+          "content/cargo-bike/images/cargo_bike_cad_ss.png",
+          "content/cargo-bike/images/cargo_bike_jig.png",
+          "content/cargo-bike/images/cargo_bike_partial_asm.png",
+          "content/cargo-bike/images/welding-cargo.png"
+        ]
+      },
+      {
+        "slug": "led-mushroom",
+        "title": "LED Mushroom",
+        "thumbnail": "content/led-mushroom/images/mushroom-glow.gif",
+        "caption": "WiFi music-reactive sculpture, 2022",
+        "section": "mini-project",
+        "tags": [
+          "led_art"
+        ],
+        "employer": null,
+        "date_start": "2022-01",
+        "date_end": "2022-06",
+        "order": 1,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Construction",
+            "anchor": "led-mushroom-construction"
+          },
+          {
+            "text": "Glowing",
+            "anchor": "led-mushroom-glowing"
+          }
+        ],
+        "images": [
+          "content/led-mushroom/images/mushroom-cardboard.png",
+          "content/led-mushroom/images/mushroom-glow.gif"
+        ]
+      },
+      {
+        "slug": "longboard",
+        "title": "DIY Longboard",
+        "thumbnail": "content/longboard/images/diy-board.png",
+        "caption": "Hand laminated plywood, 2019",
+        "section": "mini-project",
+        "tags": [
+          "fabrication"
+        ],
+        "employer": null,
+        "date_start": "2019-01",
+        "date_end": "2019-06",
+        "order": 1,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Lamination & Shaping",
+            "anchor": "longboard-lamination---shaping"
+          },
+          {
+            "text": "Finished",
+            "anchor": "longboard-finished"
+          }
+        ],
+        "images": [
+          "content/longboard/images/diy-board-stain.png",
+          "content/longboard/images/diy-board.png",
+          "content/longboard/images/skateboards.png"
+        ]
+      },
+      {
+        "slug": "carbon-seatpost",
+        "title": "Carbon Fiber Seatpost",
+        "thumbnail": "content/carbon-seatpost/images/carbon-seatpost.png",
+        "caption": "First CAD project — 3D print core + CF layup, 2019",
+        "section": "mini-project",
+        "tags": [
+          "bicycles",
+          "fabrication"
+        ],
+        "employer": null,
+        "date_start": "2019-01",
+        "date_end": "2019-06",
+        "order": 2,
+        "visible": true,
+        "headings": [
+          {
+            "text": "3D Printed Core",
+            "anchor": "carbon-seatpost-3d-printed-core"
+          },
+          {
+            "text": "Carbon Fiber Layup",
+            "anchor": "carbon-seatpost-carbon-fiber-layup"
+          },
+          {
+            "text": "Finished on the Bike",
+            "anchor": "carbon-seatpost-finished-on-the-bike"
+          }
+        ],
+        "images": [
+          "content/carbon-seatpost/images/carbon-seatpost.png",
+          "content/carbon-seatpost/images/fuji-asm.png",
+          "content/carbon-seatpost/images/seatpost-3dprint.png"
+        ]
+      },
+      {
+        "slug": "led-eye",
+        "title": "LED Eye",
+        "thumbnail": "content/led-eye/images/eye-led.gif",
+        "caption": "Music reactive LED sculpture, 2021",
+        "section": "mini-project",
+        "tags": [
+          "led_art"
+        ],
+        "employer": null,
+        "date_start": "2021-06",
+        "date_end": "2021-12",
+        "order": 2,
+        "visible": true,
+        "headings": [],
+        "images": [
+          "content/led-eye/images/eye-led.gif"
+        ]
+      },
+      {
+        "slug": "solar-longboard",
+        "title": "Solar Electric Longboard",
+        "thumbnail": "content/solar-longboard/images/solar-longboard.png",
+        "caption": "Solar charged electric longboard, 2019",
+        "section": "mini-project",
+        "tags": [
+          "fabrication"
+        ],
+        "employer": null,
+        "date_start": "2019-06",
+        "date_end": "2019-12",
+        "order": 2,
+        "visible": true,
+        "headings": [],
+        "images": [
+          "content/solar-longboard/images/solar-longboard.png"
+        ]
+      },
+      {
+        "slug": "ebike",
+        "title": "High School E-Bike",
+        "thumbnail": "content/ebike/images/ebike-photo.png",
+        "caption": "Electric conversion build, 2020",
+        "section": "mini-project",
+        "tags": [
+          "bicycles"
+        ],
+        "employer": null,
+        "date_start": "2020-06",
+        "date_end": "2020-12",
+        "order": 3,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Assembly",
+            "anchor": "ebike-assembly"
+          },
+          {
+            "text": "Wiring",
+            "anchor": "ebike-wiring"
+          },
+          {
+            "text": "Complete",
+            "anchor": "ebike-complete"
+          }
+        ],
+        "images": [
+          "content/ebike/images/ebike-asm.png",
+          "content/ebike/images/ebike-photo.png",
+          "content/ebike/images/ebike-wiring.png"
+        ]
+      },
+      {
+        "slug": "tip31c",
+        "title": "TIP31C Audio Visualizer",
+        "thumbnail": "content/tip31c/images/tip31c-glow.gif",
+        "caption": "NPN transistor audio visualization, 2019",
+        "section": "mini-project",
+        "tags": [
+          "led_art"
+        ],
+        "employer": null,
+        "date_start": "2019-06",
+        "date_end": "2019-12",
+        "order": 3,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Circuit",
+            "anchor": "tip31c-circuit"
+          },
+          {
+            "text": "In Action",
+            "anchor": "tip31c-in-action"
+          }
+        ],
+        "images": [
+          "content/tip31c/images/tip31c-diagram.png",
+          "content/tip31c/images/tip31c-glow.gif"
+        ]
+      },
+      {
+        "slug": "craigslist-bikes",
+        "title": "Craigslist Bike Restorations",
+        "thumbnail": "content/craigslist-bikes/images/painted_puch_roadbike.png",
+        "caption": "Various restorations, 2020",
+        "section": "mini-project",
+        "tags": [
+          "bicycles"
+        ],
+        "employer": null,
+        "date_start": "2020-01",
+        "date_end": "2020-12",
+        "order": 4,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Puch Roadbike Rebuild",
+            "anchor": "craigslist-bikes-puch-roadbike-rebuild"
+          }
+        ],
+        "images": [
+          "content/craigslist-bikes/images/painted_puch_roadbike.png",
+          "content/craigslist-bikes/images/painting_puch_roadbike.png",
+          "content/craigslist-bikes/images/puch_roadbike_rebuild.png"
+        ]
+      },
+      {
+        "slug": "track-bike",
+        "title": "Makino Track Bike",
+        "thumbnail": "content/track-bike/images/makino_track_bicycle.png",
+        "caption": "My lovely track bike, 2021",
+        "section": "mini-project",
+        "tags": [
+          "bicycles"
+        ],
+        "employer": null,
+        "date_start": "2021-01",
+        "date_end": "2021-06",
+        "order": 5,
+        "visible": true,
+        "headings": [],
+        "images": [
+          "content/track-bike/images/makino_track_bicycle.png"
+        ]
+      }
+    ]
+  },
+  "project": {
+    "tag_order": [
+      "employment",
+      "competitive",
+      "school",
+      "freelance"
+    ],
+    "groups": {
+      "employment": [
+        {
+          "slug": "electra",
+          "title": "Electra",
+          "thumbnail": null,
+          "caption": "Induction Stove Engineering",
+          "section": "project",
+          "tags": [
+            "employment"
+          ],
+          "employer": "Electra",
+          "date_start": "2024-11",
+          "date_end": "2025-09",
+          "order": 4,
+          "visible": false,
+          "headings": [],
+          "images": []
+        },
+        {
+          "slug": "tesla",
+          "title": "Tesla — Humanoid Manufacturing Internship",
+          "thumbnail": null,
+          "caption": "Manufacturing Engineering Intern",
+          "section": "project",
+          "tags": [
+            "employment"
+          ],
+          "employer": "Tesla",
+          "date_start": "2024-06",
+          "date_end": "2024-08",
+          "order": 3,
+          "visible": false,
+          "headings": [],
+          "images": []
+        },
+        {
+          "slug": "exascale",
+          "title": "Exascale Systems",
+          "thumbnail": "content/exascale/images/arc-furnace.png",
+          "caption": "Motion System Design & Fabrication",
+          "section": "project",
+          "tags": [
+            "employment"
+          ],
+          "employer": "Exascale Systems",
+          "date_start": "2022-06",
+          "date_end": "2023-05",
+          "order": 1,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Motion Controller For Arc Furnace",
+              "anchor": "exascale-motion-controller-for-arc-furnace"
+            },
+            {
+              "text": "Piezo Flexure Plate",
+              "anchor": "exascale-piezo-flexure-plate"
+            }
+          ],
+          "images": [
+            "content/exascale/images/arc-furnace.png",
+            "content/exascale/images/electrode-motion.jpg",
+            "content/exascale/images/motion-controller-breakout.jpg",
+            "content/exascale/images/motion-controller-complete.jpg",
+            "content/exascale/images/motion-controller-schematic.jpg",
+            "content/exascale/images/motion-controller-testing.jpg"
+          ]
+        },
+        {
+          "slug": "new-amsterdam",
+          "title": "New Amsterdam Metalworks",
+          "thumbnail": "content/new-amsterdam/images/kitchen-hood-complete.png",
+          "caption": "Fabrication & Design",
+          "section": "project",
+          "tags": [
+            "employment"
+          ],
+          "employer": "New Amsterdam Metalworks",
+          "date_start": "2021-06",
+          "date_end": "2022-05",
+          "order": 2,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Robotic Kitchen Hood",
+              "anchor": "new-amsterdam-robotic-kitchen-hood"
+            },
+            {
+              "text": "Steel Roof Deck",
+              "anchor": "new-amsterdam-steel-roof-deck"
+            }
+          ],
+          "images": [
+            "content/new-amsterdam/images/deck-asm.png",
+            "content/new-amsterdam/images/deck-cad.png",
+            "content/new-amsterdam/images/kitchen-hood-asm.jpg",
+            "content/new-amsterdam/images/kitchen-hood-cad.jpg",
+            "content/new-amsterdam/images/kitchen-hood-complete.png"
+          ]
+        }
+      ],
+      "competitive": [
+        {
+          "slug": "gnctr",
+          "title": "GNCTR",
+          "thumbnail": "content/gnctr/images/image.png",
+          "caption": "3rd Overall out of 18 teams, 2026",
+          "section": "project",
+          "tags": [
+            "competitive"
+          ],
+          "employer": "Cooper GNCTR",
+          "date_start": "2025-09",
+          "date_end": "2026-04",
+          "order": 2,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Awards",
+              "anchor": "gnctr-awards"
+            },
+            {
+              "text": "Overall Design",
+              "anchor": "gnctr-overall-design"
+            },
+            {
+              "text": "Skis",
+              "anchor": "gnctr-skis"
+            },
+            {
+              "text": "Steering",
+              "anchor": "gnctr-steering"
+            },
+            {
+              "text": "Brakes",
+              "anchor": "gnctr-brakes"
+            }
+          ],
+          "images": [
+            "content/gnctr/images/image copy 2.png",
+            "content/gnctr/images/image copy 3.png",
+            "content/gnctr/images/image copy.png",
+            "content/gnctr/images/image.png"
+          ]
+        },
+        {
+          "slug": "fsae",
+          "title": "Formula SAE — Electrical System",
+          "thumbnail": "content/fsae/images/fsae_car_coverphoto.jpg",
+          "caption": "Chief Electrical Engineer, 2022–23",
+          "section": "project",
+          "tags": [
+            "competitive"
+          ],
+          "employer": "Cooper FSAE",
+          "date_start": "2022-09",
+          "date_end": "2023-05",
+          "order": 1,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Battery Module Design",
+              "anchor": "fsae-battery-module-design"
+            },
+            {
+              "text": "BMS Design",
+              "anchor": "fsae-bms-design"
+            },
+            {
+              "text": "Vehicle Design",
+              "anchor": "fsae-vehicle-design"
+            },
+            {
+              "text": "Electromechanical Packaging",
+              "anchor": "fsae-electromechanical-packaging"
+            }
+          ],
+          "images": [
+            "content/fsae/images/PCB-HVLV.png",
+            "content/fsae/images/PCB-PC.png",
+            "content/fsae/images/PCB-PDU.png",
+            "content/fsae/images/PCB-SDC.png",
+            "content/fsae/images/SDC-TSMP-busbar_box.png",
+            "content/fsae/images/accum-shelf-asm.png",
+            "content/fsae/images/accumulator-asm-1.png",
+            "content/fsae/images/accumulator-asm-3.png",
+            "content/fsae/images/altium-accum-schem.png",
+            "content/fsae/images/altium-system-schematic-2.png",
+            "content/fsae/images/altium-system-schematic.png",
+            "content/fsae/images/bms-eda-ss.png",
+            "content/fsae/images/bms-in-night-schem.png",
+            "content/fsae/images/bms-in-night.jpg",
+            "content/fsae/images/drawio-system.png",
+            "content/fsae/images/fsae_car_coverphoto.jpg",
+            "content/fsae/images/fuse-design.png",
+            "content/fsae/images/fuse-test-results.png",
+            "content/fsae/images/fuse-test-setup.jpg",
+            "content/fsae/images/fuse-thermal.png",
+            "content/fsae/images/m2-assembled.png",
+            "content/fsae/images/m2-spot-welding.jpg",
+            "content/fsae/images/m2-taped.png",
+            "content/fsae/images/m3-asm-cells.jpg",
+            "content/fsae/images/m3-asm-taped.png",
+            "content/fsae/images/m3-cad-asm.png",
+            "content/fsae/images/m3-cad-exploded.png",
+            "content/fsae/images/m3-empty.jpg",
+            "content/fsae/images/m3-photo.jpg",
+            "content/fsae/images/m3_battery_spotwelding.jpg",
+            "content/fsae/images/mcu-breakout-diagram.png"
+          ]
+        },
+        {
+          "slug": "frc",
+          "title": "FIRST Robotics Competition",
+          "thumbnail": "content/frc/images/full-covid-bot.png",
+          "caption": "Team Captain & Designer, 2020–2022",
+          "section": "project",
+          "tags": [
+            "competitive"
+          ],
+          "employer": "FRC Team 321",
+          "date_start": "2020-09",
+          "date_end": "2022-05",
+          "order": 3,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Robot In One Night (2022)",
+              "anchor": "frc-robot-in-one-night--2022"
+            },
+            {
+              "text": "PID Steering Correction",
+              "anchor": "frc-pid-steering-correction"
+            },
+            {
+              "text": "FRC Senior Year — Team Captain (2021)",
+              "anchor": "frc-frc-senior-year---team-captain--2021"
+            },
+            {
+              "text": "FRC Junior Year — Team Member (2020)",
+              "anchor": "frc-frc-junior-year---team-member--2020"
+            }
+          ],
+          "images": [
+            "content/frc/images/2019-bot-asm.png",
+            "content/frc/images/2019-bot-asm2.png",
+            "content/frc/images/2019-bot-cad.png",
+            "content/frc/images/bot-in-night.gif",
+            "content/frc/images/covid-bot-cad.png",
+            "content/frc/images/covid-bot-flyer.png",
+            "content/frc/images/embedded-chassis.png",
+            "content/frc/images/full-covid-bot.png",
+            "content/frc/images/printed-gears-covid.png",
+            "content/frc/images/printers.gif",
+            "content/frc/images/shooter-mech.gif",
+            "content/frc/images/steering-pid.gif",
+            "content/frc/images/swerve-asm.gif",
+            "content/frc/images/swerve-module-asm.png"
+          ]
+        }
+      ],
+      "school": [
+        {
+          "slug": "electric-wheelchair",
+          "title": "Electric Wheelchair Attachment",
+          "thumbnail": null,
+          "caption": "Senior Capstone Project",
+          "section": "project",
+          "tags": [
+            "school"
+          ],
+          "employer": "Cooper Union",
+          "date_start": "2025-09",
+          "date_end": "2026-06",
+          "order": 1,
+          "visible": false,
+          "headings": [
+            {
+              "text": "Prototyping",
+              "anchor": "electric-wheelchair-prototyping"
+            },
+            {
+              "text": "Drivetrain Design",
+              "anchor": "electric-wheelchair-drivetrain-design"
+            },
+            {
+              "text": "Battery",
+              "anchor": "electric-wheelchair-battery"
+            },
+            {
+              "text": "Controls",
+              "anchor": "electric-wheelchair-controls"
+            },
+            {
+              "text": "Testing",
+              "anchor": "electric-wheelchair-testing"
+            }
+          ],
+          "images": []
+        },
+        {
+          "slug": "experimental-pump",
+          "title": "Experimental Pump Design",
+          "thumbnail": null,
+          "caption": "Fluid Mechanics Research",
+          "section": "project",
+          "tags": [
+            "school"
+          ],
+          "employer": "Cooper Union",
+          "date_start": "2025-01",
+          "date_end": "2026-01",
+          "order": 2,
+          "visible": false,
+          "headings": [
+            {
+              "text": "Design",
+              "anchor": "experimental-pump-design"
+            },
+            {
+              "text": "Testing",
+              "anchor": "experimental-pump-testing"
+            }
+          ],
+          "images": []
+        },
+        {
+          "slug": "quantum-research",
+          "title": "Quantum Entanglement Research",
+          "thumbnail": null,
+          "caption": "Research Assistant",
+          "section": "project",
+          "tags": [
+            "school"
+          ],
+          "employer": "Cooper Union",
+          "date_start": "2023-09",
+          "date_end": "2024-05",
+          "order": 5,
+          "visible": false,
+          "headings": [],
+          "images": []
+        }
+      ],
+      "freelance": [
+        {
+          "slug": "iphone-repair",
+          "title": "iPhone Repair Business",
+          "thumbnail": "content/iphone-repair/images/phone-glow.gif",
+          "caption": "Freelance Repair & LED Projects, 2018–2020",
+          "section": "project",
+          "tags": [
+            "freelance"
+          ],
+          "employer": null,
+          "date_start": "2018-09",
+          "date_end": "2020-05",
+          "order": 1,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Music Reactive Logo",
+              "anchor": "iphone-repair-music-reactive-logo"
+            },
+            {
+              "text": "Small Assembly",
+              "anchor": "iphone-repair-small-assembly"
+            },
+            {
+              "text": "Collected Broken LCDs",
+              "anchor": "iphone-repair-collected-broken-lcds"
+            }
+          ],
+          "images": [
+            "content/iphone-repair/images/phone-asm-gif.gif",
+            "content/iphone-repair/images/phone-glow.gif",
+            "content/iphone-repair/images/phone-repair.png",
+            "content/iphone-repair/images/screen-collection.png"
+          ]
+        }
+      ]
+    },
+    "thumbnail_strip": [
+      {
+        "slug": "exascale",
+        "title": "Exascale Systems",
+        "thumbnail": "content/exascale/images/arc-furnace.png",
+        "caption": "Motion System Design & Fabrication",
+        "section": "project",
+        "tags": [
+          "employment"
+        ],
+        "employer": "Exascale Systems",
+        "date_start": "2022-06",
+        "date_end": "2023-05",
+        "order": 1,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Motion Controller For Arc Furnace",
+            "anchor": "exascale-motion-controller-for-arc-furnace"
+          },
+          {
+            "text": "Piezo Flexure Plate",
+            "anchor": "exascale-piezo-flexure-plate"
+          }
+        ],
+        "images": [
+          "content/exascale/images/arc-furnace.png",
+          "content/exascale/images/electrode-motion.jpg",
+          "content/exascale/images/motion-controller-breakout.jpg",
+          "content/exascale/images/motion-controller-complete.jpg",
+          "content/exascale/images/motion-controller-schematic.jpg",
+          "content/exascale/images/motion-controller-testing.jpg"
+        ]
+      },
+      {
+        "slug": "fsae",
+        "title": "Formula SAE — Electrical System",
+        "thumbnail": "content/fsae/images/fsae_car_coverphoto.jpg",
+        "caption": "Chief Electrical Engineer, 2022–23",
+        "section": "project",
+        "tags": [
+          "competitive"
+        ],
+        "employer": "Cooper FSAE",
+        "date_start": "2022-09",
+        "date_end": "2023-05",
+        "order": 1,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Battery Module Design",
+            "anchor": "fsae-battery-module-design"
+          },
+          {
+            "text": "BMS Design",
+            "anchor": "fsae-bms-design"
+          },
+          {
+            "text": "Vehicle Design",
+            "anchor": "fsae-vehicle-design"
+          },
+          {
+            "text": "Electromechanical Packaging",
+            "anchor": "fsae-electromechanical-packaging"
+          }
+        ],
+        "images": [
+          "content/fsae/images/PCB-HVLV.png",
+          "content/fsae/images/PCB-PC.png",
+          "content/fsae/images/PCB-PDU.png",
+          "content/fsae/images/PCB-SDC.png",
+          "content/fsae/images/SDC-TSMP-busbar_box.png",
+          "content/fsae/images/accum-shelf-asm.png",
+          "content/fsae/images/accumulator-asm-1.png",
+          "content/fsae/images/accumulator-asm-3.png",
+          "content/fsae/images/altium-accum-schem.png",
+          "content/fsae/images/altium-system-schematic-2.png",
+          "content/fsae/images/altium-system-schematic.png",
+          "content/fsae/images/bms-eda-ss.png",
+          "content/fsae/images/bms-in-night-schem.png",
+          "content/fsae/images/bms-in-night.jpg",
+          "content/fsae/images/drawio-system.png",
+          "content/fsae/images/fsae_car_coverphoto.jpg",
+          "content/fsae/images/fuse-design.png",
+          "content/fsae/images/fuse-test-results.png",
+          "content/fsae/images/fuse-test-setup.jpg",
+          "content/fsae/images/fuse-thermal.png",
+          "content/fsae/images/m2-assembled.png",
+          "content/fsae/images/m2-spot-welding.jpg",
+          "content/fsae/images/m2-taped.png",
+          "content/fsae/images/m3-asm-cells.jpg",
+          "content/fsae/images/m3-asm-taped.png",
+          "content/fsae/images/m3-cad-asm.png",
+          "content/fsae/images/m3-cad-exploded.png",
+          "content/fsae/images/m3-empty.jpg",
+          "content/fsae/images/m3-photo.jpg",
+          "content/fsae/images/m3_battery_spotwelding.jpg",
+          "content/fsae/images/mcu-breakout-diagram.png"
+        ]
+      },
+      {
+        "slug": "iphone-repair",
+        "title": "iPhone Repair Business",
+        "thumbnail": "content/iphone-repair/images/phone-glow.gif",
+        "caption": "Freelance Repair & LED Projects, 2018–2020",
+        "section": "project",
+        "tags": [
+          "freelance"
+        ],
+        "employer": null,
+        "date_start": "2018-09",
+        "date_end": "2020-05",
+        "order": 1,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Music Reactive Logo",
+            "anchor": "iphone-repair-music-reactive-logo"
+          },
+          {
+            "text": "Small Assembly",
+            "anchor": "iphone-repair-small-assembly"
+          },
+          {
+            "text": "Collected Broken LCDs",
+            "anchor": "iphone-repair-collected-broken-lcds"
+          }
+        ],
+        "images": [
+          "content/iphone-repair/images/phone-asm-gif.gif",
+          "content/iphone-repair/images/phone-glow.gif",
+          "content/iphone-repair/images/phone-repair.png",
+          "content/iphone-repair/images/screen-collection.png"
+        ]
+      },
+      {
+        "slug": "gnctr",
+        "title": "GNCTR",
+        "thumbnail": "content/gnctr/images/image.png",
+        "caption": "3rd Overall out of 18 teams, 2026",
+        "section": "project",
+        "tags": [
+          "competitive"
+        ],
+        "employer": "Cooper GNCTR",
+        "date_start": "2025-09",
+        "date_end": "2026-04",
+        "order": 2,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Awards",
+            "anchor": "gnctr-awards"
+          },
+          {
+            "text": "Overall Design",
+            "anchor": "gnctr-overall-design"
+          },
+          {
+            "text": "Skis",
+            "anchor": "gnctr-skis"
+          },
+          {
+            "text": "Steering",
+            "anchor": "gnctr-steering"
+          },
+          {
+            "text": "Brakes",
+            "anchor": "gnctr-brakes"
+          }
+        ],
+        "images": [
+          "content/gnctr/images/image copy 2.png",
+          "content/gnctr/images/image copy 3.png",
+          "content/gnctr/images/image copy.png",
+          "content/gnctr/images/image.png"
+        ]
+      },
+      {
+        "slug": "new-amsterdam",
+        "title": "New Amsterdam Metalworks",
+        "thumbnail": "content/new-amsterdam/images/kitchen-hood-complete.png",
+        "caption": "Fabrication & Design",
+        "section": "project",
+        "tags": [
+          "employment"
+        ],
+        "employer": "New Amsterdam Metalworks",
+        "date_start": "2021-06",
+        "date_end": "2022-05",
+        "order": 2,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Robotic Kitchen Hood",
+            "anchor": "new-amsterdam-robotic-kitchen-hood"
+          },
+          {
+            "text": "Steel Roof Deck",
+            "anchor": "new-amsterdam-steel-roof-deck"
+          }
+        ],
+        "images": [
+          "content/new-amsterdam/images/deck-asm.png",
+          "content/new-amsterdam/images/deck-cad.png",
+          "content/new-amsterdam/images/kitchen-hood-asm.jpg",
+          "content/new-amsterdam/images/kitchen-hood-cad.jpg",
+          "content/new-amsterdam/images/kitchen-hood-complete.png"
+        ]
+      },
+      {
+        "slug": "frc",
+        "title": "FIRST Robotics Competition",
+        "thumbnail": "content/frc/images/full-covid-bot.png",
+        "caption": "Team Captain & Designer, 2020–2022",
+        "section": "project",
+        "tags": [
+          "competitive"
+        ],
+        "employer": "FRC Team 321",
+        "date_start": "2020-09",
+        "date_end": "2022-05",
+        "order": 3,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Robot In One Night (2022)",
+            "anchor": "frc-robot-in-one-night--2022"
+          },
+          {
+            "text": "PID Steering Correction",
+            "anchor": "frc-pid-steering-correction"
+          },
+          {
+            "text": "FRC Senior Year — Team Captain (2021)",
+            "anchor": "frc-frc-senior-year---team-captain--2021"
+          },
+          {
+            "text": "FRC Junior Year — Team Member (2020)",
+            "anchor": "frc-frc-junior-year---team-member--2020"
+          }
+        ],
+        "images": [
+          "content/frc/images/2019-bot-asm.png",
+          "content/frc/images/2019-bot-asm2.png",
+          "content/frc/images/2019-bot-cad.png",
+          "content/frc/images/bot-in-night.gif",
+          "content/frc/images/covid-bot-cad.png",
+          "content/frc/images/covid-bot-flyer.png",
+          "content/frc/images/embedded-chassis.png",
+          "content/frc/images/full-covid-bot.png",
+          "content/frc/images/printed-gears-covid.png",
+          "content/frc/images/printers.gif",
+          "content/frc/images/shooter-mech.gif",
+          "content/frc/images/steering-pid.gif",
+          "content/frc/images/swerve-asm.gif",
+          "content/frc/images/swerve-module-asm.png"
+        ]
+      }
+    ]
+  }
+}
