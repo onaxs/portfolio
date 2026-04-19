@@ -626,7 +626,7 @@ function buildTOCTree(data, prefix) {
           : (projIsLast ? '    │   └── ' : '    │   ├── ');
 
         if (proj.headings && proj.headings.length > 0) {
-          const projNode = makeCollapsible(prefix3 + proj.title, `#project-${proj.slug}`, prefix + '-' + proj.slug);
+          const projNode = makeCollapsible(prefix3 + proj.title, `#${proj.slug}`, prefix + '-' + proj.slug);
           const projChildren = projNode.querySelector('.toc-children');
 
           proj.headings.forEach((h, hi) => {
@@ -643,7 +643,7 @@ function buildTOCTree(data, prefix) {
           tagChildren.appendChild(projNode);
         } else {
           const pa = document.createElement('a');
-          pa.href = `#project-${proj.slug}`;
+          pa.href = `#${proj.slug}`;
           pa.textContent = prefix3 + proj.title;
           tagChildren.appendChild(pa);
         }
@@ -677,6 +677,7 @@ function makeCollapsible(label, href, id) {
     summary.setAttribute('aria-expanded', String(expanded));
     const target = document.querySelector(href);
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    else if (href) window.location.hash = href;
   });
 
   wrap.appendChild(summary);
