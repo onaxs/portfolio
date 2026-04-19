@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xano Sweeting | Portfolio</title>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
   <style>
     /* ── Reset & base ──────────────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -545,40 +543,6 @@
 
 const STRIP_DEFAULT = 6;
 
-// ── marked.js setup ────────────────────────────────────────────────────────
-
-const renderer = new marked.Renderer();
-
-// Add slug-prefixed IDs to headings so TOC anchors work
-renderer.heading = function(text, level) {
-  // currentSlug is set before each project render
-  const anchor = window._currentSlug
-    ? `${window._currentSlug}-${slugify(text)}`
-    : slugify(text);
-  return `<h${level} id="${anchor}">${text}</h${level}>`;
-};
-
-// Convert .glb img tags to model-viewer
-renderer.image = function(href, title, text) {
-  if (href && href.endsWith('.glb')) {
-    return `<model-viewer src="${href}" alt="${text}" camera-controls touch-action="pan-y" auto-rotate></model-viewer>`;
-  }
-  const titleAttr = title ? ` title="${title}"` : '';
-  return `<img src="${href}" alt="${text}"${titleAttr}>`;
-};
-
-marked.setOptions({ renderer });
-
-function slugify(text) {
-  return text.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/[\s]+/g, '-');
-}
-
-function stripFrontmatter(md) {
-  if (!md.startsWith('---')) return md;
-  const end = md.indexOf('---', 3);
-  if (end === -1) return md;
-  return md.slice(end + 3).trim();
-}
 
 function formatDate(ds) {
   if (!ds) return '';
@@ -867,13 +831,10 @@ async function showProjectPage(slug) {
   const project = _allProjects.find(p => p.slug === slug);
   if (!project) { showMainPage(); return; }
 
-  // Fetch & render markdown
+  // Fetch pre-rendered HTML fragment
   let html = '<p><em>Content coming soon.</em></p>';
   try {
-    const md = await fetch(`content/${slug}/index.md`).then(r => r.text());
-    window._currentSlug = slug;
-    html = marked.parse(stripFrontmatter(md));
-    window._currentSlug = null;
+    html = await fetch(`content/${slug}/index.html`).then(r => r.text());
   } catch {}
 
   const body = document.getElementById('project-page-body');
@@ -988,9 +949,9 @@ function router() {
 // ── Boot ───────────────────────────────────────────────────────────────────
 
 async function init() {
-  fetch('about.md')
+  fetch('about.html')
     .then(r => r.text())
-    .then(md => { document.getElementById('about-body').innerHTML = marked.parse(md); });
+    .then(html => { document.getElementById('about-body').innerHTML = html; });
 
   _data = await fetch('projects.json').then(r => r.json());
 

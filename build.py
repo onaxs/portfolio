@@ -2,7 +2,8 @@
 """
 Portfolio build script.
 Scans content/*/index.md, parses frontmatter and H2 headings,
-groups by section → tag → date, and outputs projects.json.
+groups by section → tag → date, outputs projects.json, and renders
+each content/*/index.md to a static content/*/index.html fragment.
 
 Run: python build.py
 """
@@ -11,6 +12,15 @@ import os
 import json
 import re
 from pathlib import Path
+
+try:
+    import markdown as md_lib
+    _MD_EXTENSIONS = ['tables', 'fenced_code']
+    HAS_MARKDOWN = True
+except ImportError:
+    HAS_MARKDOWN = False
+    print("Warning: 'markdown' package not found. Run: pip install markdown")
+    print("  Static HTML files will not be generated.")
 
 # ── Configuration ────────────────────────────────────────────────────────────
 # Edit these lists to add, remove, or reorder tags within each section.
@@ -119,6 +129,24 @@ def make_anchor(text):
     return re.sub(r'[^\w\-]', '-', text.lower()).strip('-')
 
 
+# ── Markdown → HTML renderer ─────────────────────────────────────────────────
+
+def render_html(body, slug=None):
+    """Render markdown body to an HTML fragment with slug-prefixed heading IDs."""
+    if not HAS_MARKDOWN:
+        return None
+    html = md_lib.markdown(body, extensions=_MD_EXTENSIONS)
+    if slug:
+        def add_id(m):
+            level = m.group(1)
+            inner = m.group(2)
+            plain = re.sub(r'<[^>]+>', '', inner)
+            anchor = f"{slug}-{make_anchor(plain)}"
+            return f'<h{level} id="{anchor}">{inner}</h{level}>'
+        html = re.sub(r'<h([1-6])>(.*?)</h\1>', add_id, html, flags=re.IGNORECASE | re.DOTALL)
+    return html
+
+
 # ── Date sorting key ──────────────────────────────────────────────────────────
 
 def date_sort_key(project):
@@ -161,6 +189,11 @@ def build():
         tags = meta.get("tags") or []
         if isinstance(tags, str):
             tags = [tags]
+
+        # Write static HTML fragment
+        html_fragment = render_html(body, slug=slug)
+        if html_fragment is not None:
+            (project_dir / "index.html").write_text(html_fragment, encoding="utf-8")
 
         headings = extract_h2_headings(body)
         heading_anchors = [
@@ -240,6 +273,13 @@ def build():
     out_path = Path("projects.json")
     out_path.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Built {out_path} with {len(projects)} projects across {len(output)} sections.")
+
+    # Render about.md → about.html
+    about_md = Path("about.md")
+    if about_md.exists() and HAS_MARKDOWN:
+        about_html = render_html(about_md.read_text(encoding="utf-8"))
+        Path("about.html").write_text(about_html, encoding="utf-8")
+        print("Built about.html")
 
     for section_name, data in output.items():
         total = sum(len(v) for v in data["groups"].values())
