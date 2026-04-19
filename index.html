@@ -870,10 +870,21 @@ async function showProjectPage(slug) {
   // Swap visible pages
   document.getElementById('main-page').hidden = true;
   document.getElementById('project-page').hidden = false;
-  window.scrollTo(0, 0);
 
   // Build project TOC from heading anchors
   buildProjectTOC(project);
+
+  // Scroll to heading anchor if present, otherwise scroll to top
+  const hash = window.location.hash.slice(1);
+  if (hash && hash !== slug) {
+    requestAnimationFrame(() => {
+      const el = document.getElementById(hash);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      else window.scrollTo(0, 0);
+    });
+  } else {
+    window.scrollTo(0, 0);
+  }
 }
 
 function showMainPage() {
@@ -937,10 +948,14 @@ function router() {
     showProjectPage(hash); return;
   }
 
-  // In-page heading anchor on a project page (e.g. fsae-battery-module-design)
-  // — just let the browser scroll, don't change which page is shown
-  const isHeadingAnchor = _allProjects.some(p => hash.startsWith(p.slug + '-'));
-  if (isHeadingAnchor) return;
+  // Heading anchor (e.g. fsae-battery-module-design) — load project page if needed
+  const matchedProject = _allProjects.find(p => hash.startsWith(p.slug + '-'));
+  if (matchedProject) {
+    if (document.getElementById('project-page').hidden) {
+      showProjectPage(matchedProject.slug);
+    }
+    return;
+  }
 
   // Main-page section/tag anchors → main page
   showMainPage();
