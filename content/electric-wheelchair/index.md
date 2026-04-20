@@ -1,6 +1,6 @@
 ---
 title: "Electric Wheelchair Attachment"
-thumbnail: "content/electric-wheelchair/images/mounted-device.jpg"
+thumbnail: /content/electric-wheelchair/images/mounted-device.JPG
 caption: "Senior Capstone Project"
 section: project
 tags: [school]
