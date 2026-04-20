@@ -12,6 +12,8 @@ visible: true
 
 # Building a Cargo Bike
 
+Designed and built a cargo bike that I carried over 400lbs on (3 people to and from a bar).  
+
 ## Design
 
 <img src="content/cargo-bike/images/cargo_bike_cad_ss.png" alt="Cargo Bike CAD" width="800">
