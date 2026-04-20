@@ -1,6 +1,6 @@
 ---
 title: "Electric Wheelchair Attachment"
-thumbnail: /content/electric-wheelchair/images/mounted-device.JPG
+thumbnail: /content/electric-wheelchair/images/D110C776-0C2B-4341-9FBE-1E8459187D18_1_105_c.jpeg
 caption: "Senior Capstone Project"
 section: project
 tags: [school]
