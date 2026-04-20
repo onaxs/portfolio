@@ -7,7 +7,7 @@ tags: [employment]
 employer: New Amsterdam Metalworks
 date_start: 2021-06
 date_end: 2022-05
-order: 2
+order: 4
 visible: true
 ---
 

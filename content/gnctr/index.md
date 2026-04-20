@@ -1,6 +1,6 @@
 ---
 title: "GNCTR"
-thumbnail: "content/gnctr/images/image.png"
+thumbnail: content/gnctr/images/Full_ASM_CAD.png
 caption: "3rd Overall out of 18 teams, 2026"
 section: project
 tags: [competitive]

@@ -6,7 +6,7 @@ section: project
 tags: [freelance]
 date_start: 2018-09
 date_end: 2020-05
-order: 1
+order: 6
 visible: true
 ---
 

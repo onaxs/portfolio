@@ -7,7 +7,7 @@ tags: [fabrication]
 date_start: 2026-01
 date_end: present
 order: 3
-visible: false
+visible: true
 ---
 
 # Experimental Air Pump

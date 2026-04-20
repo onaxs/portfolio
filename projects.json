@@ -87,37 +87,6 @@
       ],
       "bicycles": [
         {
-          "slug": "bike-welding-fixture",
-          "title": "Bicycle Welding Fixture",
-          "thumbnail": null,
-          "caption": "Frame building jig, 2026",
-          "section": "mini-project",
-          "tags": [
-            "bicycles",
-            "fabrication"
-          ],
-          "employer": null,
-          "date_start": "2026-01",
-          "date_end": "present",
-          "order": 6,
-          "visible": false,
-          "headings": [
-            {
-              "text": "Prototyping",
-              "anchor": "bike-welding-fixture-prototyping"
-            },
-            {
-              "text": "Fabrication",
-              "anchor": "bike-welding-fixture-fabrication"
-            },
-            {
-              "text": "Use & Performance",
-              "anchor": "bike-welding-fixture-use---performance"
-            }
-          ],
-          "images": []
-        },
-        {
           "slug": "cargo-bike",
           "title": "Building a Cargo Bike",
           "thumbnail": "content/cargo-bike/images/cargo_bike_partial_asm.png",
@@ -285,39 +254,8 @@
           "date_start": "2026-01",
           "date_end": "present",
           "order": 3,
-          "visible": false,
+          "visible": true,
           "headings": [],
-          "images": []
-        },
-        {
-          "slug": "bike-welding-fixture",
-          "title": "Bicycle Welding Fixture",
-          "thumbnail": null,
-          "caption": "Frame building jig, 2026",
-          "section": "mini-project",
-          "tags": [
-            "bicycles",
-            "fabrication"
-          ],
-          "employer": null,
-          "date_start": "2026-01",
-          "date_end": "present",
-          "order": 6,
-          "visible": false,
-          "headings": [
-            {
-              "text": "Prototyping",
-              "anchor": "bike-welding-fixture-prototyping"
-            },
-            {
-              "text": "Fabrication",
-              "anchor": "bike-welding-fixture-fabrication"
-            },
-            {
-              "text": "Use & Performance",
-              "anchor": "bike-welding-fixture-use---performance"
-            }
-          ],
           "images": []
         },
         {
@@ -402,6 +340,26 @@
             "content/longboard/images/diy-board-stain.png",
             "content/longboard/images/diy-board.png",
             "content/longboard/images/skateboards.png"
+          ]
+        }
+      ],
+      "other": [
+        {
+          "slug": "catio",
+          "title": "Catio",
+          "thumbnail": "content/catio/images/IMG_4855.jpeg",
+          "caption": "Patio for my brother's cat",
+          "section": "mini-project",
+          "tags": [],
+          "employer": null,
+          "date_start": "2021-01",
+          "date_end": "2021-06",
+          "order": 5,
+          "visible": true,
+          "headings": [],
+          "images": [
+            "content/catio/images/IMG_4855.jpeg",
+            "content/catio/images/IMG_4860.jpeg"
           ]
         }
       ]
@@ -579,6 +537,23 @@
         ]
       },
       {
+        "slug": "airpump",
+        "title": "Experimental Air Pump",
+        "thumbnail": null,
+        "caption": "Custom pump design, 2026",
+        "section": "mini-project",
+        "tags": [
+          "fabrication"
+        ],
+        "employer": null,
+        "date_start": "2026-01",
+        "date_end": "present",
+        "order": 3,
+        "visible": true,
+        "headings": [],
+        "images": []
+      },
+      {
         "slug": "ebike",
         "title": "High School E-Bike",
         "thumbnail": "content/ebike/images/ebike-photo.png",
@@ -668,6 +643,24 @@
         ]
       },
       {
+        "slug": "catio",
+        "title": "Catio",
+        "thumbnail": "content/catio/images/IMG_4855.jpeg",
+        "caption": "Patio for my brother's cat",
+        "section": "mini-project",
+        "tags": [],
+        "employer": null,
+        "date_start": "2021-01",
+        "date_end": "2021-06",
+        "order": 5,
+        "visible": true,
+        "headings": [],
+        "images": [
+          "content/catio/images/IMG_4855.jpeg",
+          "content/catio/images/IMG_4860.jpeg"
+        ]
+      },
+      {
         "slug": "track-bike",
         "title": "Makino Track Bike",
         "thumbnail": "content/track-bike/images/makino_track_bicycle.png",
@@ -693,14 +686,16 @@
       "employment",
       "competitive",
       "school",
-      "freelance"
+      "freelance",
+      "bicycles",
+      "fabrication"
     ],
     "groups": {
       "employment": [
         {
           "slug": "electra",
           "title": "Electra",
-          "thumbnail": null,
+          "thumbnail": "content/electra/images/IMG_0873.JPG",
           "caption": "Induction Stove Engineering",
           "section": "project",
           "tags": [
@@ -709,10 +704,32 @@
           "employer": "Electra",
           "date_start": "2024-11",
           "date_end": "2025-09",
-          "order": 4,
-          "visible": false,
+          "order": 2,
+          "visible": true,
           "headings": [],
-          "images": []
+          "images": [
+            "content/electra/images/IMG_0559.JPG",
+            "content/electra/images/IMG_0619.JPG",
+            "content/electra/images/IMG_0819.JPG",
+            "content/electra/images/IMG_0850.JPG",
+            "content/electra/images/IMG_0855.JPG",
+            "content/electra/images/IMG_0867.JPG",
+            "content/electra/images/IMG_0871.JPG",
+            "content/electra/images/IMG_0872.JPG",
+            "content/electra/images/IMG_0873.JPG",
+            "content/electra/images/IMG_0874.JPG",
+            "content/electra/images/IMG_0875.JPG",
+            "content/electra/images/IMG_1064.JPG",
+            "content/electra/images/IMG_1074.JPG",
+            "content/electra/images/Screenshot 2025-04-26 at 10.07.47 PM.png",
+            "content/electra/images/Screenshot 2025-04-26 at 10.08.17 PM.png",
+            "content/electra/images/Screenshot 2025-04-26 at 10.09.48 PM.png",
+            "content/electra/images/Screenshot 2025-04-26 at 10.10.12 PM.png",
+            "content/electra/images/Screenshot 2025-04-26 at 10.11.21 PM.png",
+            "content/electra/images/Screenshot 2025-04-26 at 10.12.50 PM.png",
+            "content/electra/images/Screenshot 2025-04-26 at 10.13.28 PM.png",
+            "content/electra/images/Screenshot 2025-04-26 at 10.14.04 PM.png"
+          ]
         },
         {
           "slug": "tesla",
@@ -743,7 +760,7 @@
           "employer": "Exascale Systems",
           "date_start": "2022-06",
           "date_end": "2023-05",
-          "order": 1,
+          "order": 4,
           "visible": true,
           "headings": [
             {
@@ -756,6 +773,7 @@
             }
           ],
           "images": [
+            "content/exascale/images/IMG_2450.jpg",
             "content/exascale/images/arc-furnace.png",
             "content/exascale/images/electrode-motion.jpg",
             "content/exascale/images/motion-controller-breakout.jpg",
@@ -776,7 +794,7 @@
           "employer": "New Amsterdam Metalworks",
           "date_start": "2021-06",
           "date_end": "2022-05",
-          "order": 2,
+          "order": 4,
           "visible": true,
           "headings": [
             {
@@ -801,7 +819,7 @@
         {
           "slug": "gnctr",
           "title": "GNCTR",
-          "thumbnail": "content/gnctr/images/image.png",
+          "thumbnail": "content/gnctr/images/Full_ASM_CAD.png",
           "caption": "3rd Overall out of 18 teams, 2026",
           "section": "project",
           "tags": [
@@ -985,9 +1003,92 @@
       ],
       "school": [
         {
+          "slug": "bike-welding-fixture",
+          "title": "Bicycle Welding Fixture",
+          "thumbnail": "/content/bike-welding-fixture/images/IMG_2967.JPG",
+          "caption": "Bicycle Welding Fixture",
+          "section": "project",
+          "tags": [
+            "school",
+            "bicycles",
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2026-01",
+          "date_end": "present",
+          "order": 2,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Prototyping",
+              "anchor": "bike-welding-fixture-prototyping"
+            },
+            {
+              "text": "Fabrication",
+              "anchor": "bike-welding-fixture-fabrication"
+            },
+            {
+              "text": "Use & Performance",
+              "anchor": "bike-welding-fixture-use---performance"
+            }
+          ],
+          "images": [
+            "content/bike-welding-fixture/images/20251119_160918.jpg",
+            "content/bike-welding-fixture/images/20251119_162135.jpg",
+            "content/bike-welding-fixture/images/20251119_162500.jpg",
+            "content/bike-welding-fixture/images/20251119_162657.jpg",
+            "content/bike-welding-fixture/images/20251203_184504.jpg",
+            "content/bike-welding-fixture/images/20251204_153224.jpg",
+            "content/bike-welding-fixture/images/20260128_125202.jpg",
+            "content/bike-welding-fixture/images/20260211_161040.jpg",
+            "content/bike-welding-fixture/images/20260218_130855.jpg",
+            "content/bike-welding-fixture/images/20260218_182555.jpg",
+            "content/bike-welding-fixture/images/20260218_182557.jpg",
+            "content/bike-welding-fixture/images/20260218_182602.jpg",
+            "content/bike-welding-fixture/images/20260304_135946.jpg",
+            "content/bike-welding-fixture/images/20260324_191715.jpg",
+            "content/bike-welding-fixture/images/20260324_191718.jpg",
+            "content/bike-welding-fixture/images/20260324_191755.jpg",
+            "content/bike-welding-fixture/images/20260324_191758.jpg",
+            "content/bike-welding-fixture/images/20260324_191832.jpg",
+            "content/bike-welding-fixture/images/20260324_191856.jpg",
+            "content/bike-welding-fixture/images/20260324_191929.jpg",
+            "content/bike-welding-fixture/images/20260324_191931.jpg",
+            "content/bike-welding-fixture/images/20260324_191938.jpg",
+            "content/bike-welding-fixture/images/20260324_191947.jpg",
+            "content/bike-welding-fixture/images/20260324_192031.jpg",
+            "content/bike-welding-fixture/images/20260324_192111.jpg",
+            "content/bike-welding-fixture/images/20260324_192112.jpg",
+            "content/bike-welding-fixture/images/20260324_192115.jpg",
+            "content/bike-welding-fixture/images/20260324_192135.jpg",
+            "content/bike-welding-fixture/images/20260324_192144.jpg",
+            "content/bike-welding-fixture/images/20260324_192231.jpg",
+            "content/bike-welding-fixture/images/20260324_192246.jpg",
+            "content/bike-welding-fixture/images/20260324_192300.jpg",
+            "content/bike-welding-fixture/images/20260324_193152.jpg",
+            "content/bike-welding-fixture/images/20260324_193200.jpg",
+            "content/bike-welding-fixture/images/20260324_193617.jpg",
+            "content/bike-welding-fixture/images/3106453382366094883.jpg",
+            "content/bike-welding-fixture/images/3861156482002020839.jpg",
+            "content/bike-welding-fixture/images/8087744433408114520.jpg",
+            "content/bike-welding-fixture/images/9177882566032132882.jpg",
+            "content/bike-welding-fixture/images/IMG_2016.JPG",
+            "content/bike-welding-fixture/images/IMG_2065.JPG",
+            "content/bike-welding-fixture/images/IMG_2078.JPG",
+            "content/bike-welding-fixture/images/IMG_2079.JPG",
+            "content/bike-welding-fixture/images/IMG_2080.JPG",
+            "content/bike-welding-fixture/images/IMG_2083.JPG",
+            "content/bike-welding-fixture/images/IMG_2085.JPG",
+            "content/bike-welding-fixture/images/IMG_2087.JPG",
+            "content/bike-welding-fixture/images/IMG_2841.JPG",
+            "content/bike-welding-fixture/images/IMG_2966.JPG",
+            "content/bike-welding-fixture/images/IMG_2967.JPG"
+          ]
+        },
+        {
           "slug": "electric-wheelchair",
           "title": "Electric Wheelchair Attachment",
-          "thumbnail": null,
+          "thumbnail": "content/electric-wheelchair/images/mounted-device.jpg",
           "caption": "Senior Capstone Project",
           "section": "project",
           "tags": [
@@ -997,7 +1098,7 @@
           "date_start": "2025-09",
           "date_end": "2026-06",
           "order": 1,
-          "visible": false,
+          "visible": true,
           "headings": [
             {
               "text": "Prototyping",
@@ -1020,12 +1121,50 @@
               "anchor": "electric-wheelchair-testing"
             }
           ],
-          "images": []
+          "images": [
+            "content/electric-wheelchair/images/20260326_170630.jpg",
+            "content/electric-wheelchair/images/20260416_223947.jpg",
+            "content/electric-wheelchair/images/IMG_0323.PNG",
+            "content/electric-wheelchair/images/IMG_0734.gif",
+            "content/electric-wheelchair/images/IMG_2062.JPG",
+            "content/electric-wheelchair/images/IMG_2064.JPG",
+            "content/electric-wheelchair/images/IMG_2964.JPG",
+            "content/electric-wheelchair/images/IMG_2997.JPG",
+            "content/electric-wheelchair/images/IMG_3036.JPG",
+            "content/electric-wheelchair/images/IMG_3066.gif",
+            "content/electric-wheelchair/images/IMG_3083.JPG",
+            "content/electric-wheelchair/images/IMG_3084.JPG",
+            "content/electric-wheelchair/images/IMG_3086.JPG",
+            "content/electric-wheelchair/images/IMG_3285.JPG",
+            "content/electric-wheelchair/images/IMG_3312.JPG",
+            "content/electric-wheelchair/images/IMG_3322.gif",
+            "content/electric-wheelchair/images/IMG_3331.JPG",
+            "content/electric-wheelchair/images/IMG_3353.JPG",
+            "content/electric-wheelchair/images/IMG_3354.JPG",
+            "content/electric-wheelchair/images/IMG_3391.JPG",
+            "content/electric-wheelchair/images/IMG_3398.JPG",
+            "content/electric-wheelchair/images/IMG_3430.JPG",
+            "content/electric-wheelchair/images/IMG_3441.JPG",
+            "content/electric-wheelchair/images/IMG_3447.JPG",
+            "content/electric-wheelchair/images/IMG_3461.JPG",
+            "content/electric-wheelchair/images/IMG_3475.JPG",
+            "content/electric-wheelchair/images/Pack_ASM (5).png",
+            "content/electric-wheelchair/images/Pack_ASM (6).png",
+            "content/electric-wheelchair/images/Pack_ASM (7).png",
+            "content/electric-wheelchair/images/cell_level_fusing.png",
+            "content/electric-wheelchair/images/mounted-device.JPG",
+            "content/electric-wheelchair/images/nickel_busbars.png",
+            "content/electric-wheelchair/images/pack_asm_1-3.png",
+            "content/electric-wheelchair/images/pack_asm_clear_1-1.png",
+            "content/electric-wheelchair/images/pack_asm_explode_1-2.png",
+            "content/electric-wheelchair/images/pack_concept_brainstorm.png",
+            "content/electric-wheelchair/images/pack_fuse_integration.png"
+          ]
         },
         {
           "slug": "experimental-pump",
           "title": "Experimental Pump Design",
-          "thumbnail": null,
+          "thumbnail": "/content/experimental-pump/images/IMG_7185.PNG",
           "caption": "Fluid Mechanics Research",
           "section": "project",
           "tags": [
@@ -1034,8 +1173,8 @@
           "employer": "Cooper Union",
           "date_start": "2025-01",
           "date_end": "2026-01",
-          "order": 2,
-          "visible": false,
+          "order": 3,
+          "visible": true,
           "headings": [
             {
               "text": "Design",
@@ -1046,7 +1185,19 @@
               "anchor": "experimental-pump-testing"
             }
           ],
-          "images": []
+          "images": [
+            "content/experimental-pump/images/AF789D41-2E74-47F5-94E1-20F865DF06C9_1_105_c.jpeg",
+            "content/experimental-pump/images/B053FD3E-B41E-4600-947F-93F67471A6F1_1_105_c.jpeg",
+            "content/experimental-pump/images/C06C91C4-9A5A-4D84-90D9-5ED2FEE14D01_1_105_c.jpeg",
+            "content/experimental-pump/images/FC09BB4C-2464-475B-8DC0-C7BBB61EA43D_1_105_c.jpeg",
+            "content/experimental-pump/images/IMG_0127.JPG",
+            "content/experimental-pump/images/IMG_0138.JPG",
+            "content/experimental-pump/images/IMG_0153.gif",
+            "content/experimental-pump/images/IMG_7185.PNG",
+            "content/experimental-pump/images/IMG_7186.PNG",
+            "content/experimental-pump/images/IMG_7228.JPG",
+            "content/experimental-pump/images/IMG_7230.JPG"
+          ]
         },
         {
           "slug": "quantum-research",
@@ -1079,7 +1230,7 @@
           "employer": null,
           "date_start": "2018-09",
           "date_end": "2020-05",
-          "order": 1,
+          "order": 6,
           "visible": true,
           "headings": [
             {
@@ -1102,40 +1253,253 @@
             "content/iphone-repair/images/screen-collection.png"
           ]
         }
+      ],
+      "bicycles": [
+        {
+          "slug": "bike-welding-fixture",
+          "title": "Bicycle Welding Fixture",
+          "thumbnail": "/content/bike-welding-fixture/images/IMG_2967.JPG",
+          "caption": "Bicycle Welding Fixture",
+          "section": "project",
+          "tags": [
+            "school",
+            "bicycles",
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2026-01",
+          "date_end": "present",
+          "order": 2,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Prototyping",
+              "anchor": "bike-welding-fixture-prototyping"
+            },
+            {
+              "text": "Fabrication",
+              "anchor": "bike-welding-fixture-fabrication"
+            },
+            {
+              "text": "Use & Performance",
+              "anchor": "bike-welding-fixture-use---performance"
+            }
+          ],
+          "images": [
+            "content/bike-welding-fixture/images/20251119_160918.jpg",
+            "content/bike-welding-fixture/images/20251119_162135.jpg",
+            "content/bike-welding-fixture/images/20251119_162500.jpg",
+            "content/bike-welding-fixture/images/20251119_162657.jpg",
+            "content/bike-welding-fixture/images/20251203_184504.jpg",
+            "content/bike-welding-fixture/images/20251204_153224.jpg",
+            "content/bike-welding-fixture/images/20260128_125202.jpg",
+            "content/bike-welding-fixture/images/20260211_161040.jpg",
+            "content/bike-welding-fixture/images/20260218_130855.jpg",
+            "content/bike-welding-fixture/images/20260218_182555.jpg",
+            "content/bike-welding-fixture/images/20260218_182557.jpg",
+            "content/bike-welding-fixture/images/20260218_182602.jpg",
+            "content/bike-welding-fixture/images/20260304_135946.jpg",
+            "content/bike-welding-fixture/images/20260324_191715.jpg",
+            "content/bike-welding-fixture/images/20260324_191718.jpg",
+            "content/bike-welding-fixture/images/20260324_191755.jpg",
+            "content/bike-welding-fixture/images/20260324_191758.jpg",
+            "content/bike-welding-fixture/images/20260324_191832.jpg",
+            "content/bike-welding-fixture/images/20260324_191856.jpg",
+            "content/bike-welding-fixture/images/20260324_191929.jpg",
+            "content/bike-welding-fixture/images/20260324_191931.jpg",
+            "content/bike-welding-fixture/images/20260324_191938.jpg",
+            "content/bike-welding-fixture/images/20260324_191947.jpg",
+            "content/bike-welding-fixture/images/20260324_192031.jpg",
+            "content/bike-welding-fixture/images/20260324_192111.jpg",
+            "content/bike-welding-fixture/images/20260324_192112.jpg",
+            "content/bike-welding-fixture/images/20260324_192115.jpg",
+            "content/bike-welding-fixture/images/20260324_192135.jpg",
+            "content/bike-welding-fixture/images/20260324_192144.jpg",
+            "content/bike-welding-fixture/images/20260324_192231.jpg",
+            "content/bike-welding-fixture/images/20260324_192246.jpg",
+            "content/bike-welding-fixture/images/20260324_192300.jpg",
+            "content/bike-welding-fixture/images/20260324_193152.jpg",
+            "content/bike-welding-fixture/images/20260324_193200.jpg",
+            "content/bike-welding-fixture/images/20260324_193617.jpg",
+            "content/bike-welding-fixture/images/3106453382366094883.jpg",
+            "content/bike-welding-fixture/images/3861156482002020839.jpg",
+            "content/bike-welding-fixture/images/8087744433408114520.jpg",
+            "content/bike-welding-fixture/images/9177882566032132882.jpg",
+            "content/bike-welding-fixture/images/IMG_2016.JPG",
+            "content/bike-welding-fixture/images/IMG_2065.JPG",
+            "content/bike-welding-fixture/images/IMG_2078.JPG",
+            "content/bike-welding-fixture/images/IMG_2079.JPG",
+            "content/bike-welding-fixture/images/IMG_2080.JPG",
+            "content/bike-welding-fixture/images/IMG_2083.JPG",
+            "content/bike-welding-fixture/images/IMG_2085.JPG",
+            "content/bike-welding-fixture/images/IMG_2087.JPG",
+            "content/bike-welding-fixture/images/IMG_2841.JPG",
+            "content/bike-welding-fixture/images/IMG_2966.JPG",
+            "content/bike-welding-fixture/images/IMG_2967.JPG"
+          ]
+        }
+      ],
+      "fabrication": [
+        {
+          "slug": "bike-welding-fixture",
+          "title": "Bicycle Welding Fixture",
+          "thumbnail": "/content/bike-welding-fixture/images/IMG_2967.JPG",
+          "caption": "Bicycle Welding Fixture",
+          "section": "project",
+          "tags": [
+            "school",
+            "bicycles",
+            "fabrication"
+          ],
+          "employer": null,
+          "date_start": "2026-01",
+          "date_end": "present",
+          "order": 2,
+          "visible": true,
+          "headings": [
+            {
+              "text": "Prototyping",
+              "anchor": "bike-welding-fixture-prototyping"
+            },
+            {
+              "text": "Fabrication",
+              "anchor": "bike-welding-fixture-fabrication"
+            },
+            {
+              "text": "Use & Performance",
+              "anchor": "bike-welding-fixture-use---performance"
+            }
+          ],
+          "images": [
+            "content/bike-welding-fixture/images/20251119_160918.jpg",
+            "content/bike-welding-fixture/images/20251119_162135.jpg",
+            "content/bike-welding-fixture/images/20251119_162500.jpg",
+            "content/bike-welding-fixture/images/20251119_162657.jpg",
+            "content/bike-welding-fixture/images/20251203_184504.jpg",
+            "content/bike-welding-fixture/images/20251204_153224.jpg",
+            "content/bike-welding-fixture/images/20260128_125202.jpg",
+            "content/bike-welding-fixture/images/20260211_161040.jpg",
+            "content/bike-welding-fixture/images/20260218_130855.jpg",
+            "content/bike-welding-fixture/images/20260218_182555.jpg",
+            "content/bike-welding-fixture/images/20260218_182557.jpg",
+            "content/bike-welding-fixture/images/20260218_182602.jpg",
+            "content/bike-welding-fixture/images/20260304_135946.jpg",
+            "content/bike-welding-fixture/images/20260324_191715.jpg",
+            "content/bike-welding-fixture/images/20260324_191718.jpg",
+            "content/bike-welding-fixture/images/20260324_191755.jpg",
+            "content/bike-welding-fixture/images/20260324_191758.jpg",
+            "content/bike-welding-fixture/images/20260324_191832.jpg",
+            "content/bike-welding-fixture/images/20260324_191856.jpg",
+            "content/bike-welding-fixture/images/20260324_191929.jpg",
+            "content/bike-welding-fixture/images/20260324_191931.jpg",
+            "content/bike-welding-fixture/images/20260324_191938.jpg",
+            "content/bike-welding-fixture/images/20260324_191947.jpg",
+            "content/bike-welding-fixture/images/20260324_192031.jpg",
+            "content/bike-welding-fixture/images/20260324_192111.jpg",
+            "content/bike-welding-fixture/images/20260324_192112.jpg",
+            "content/bike-welding-fixture/images/20260324_192115.jpg",
+            "content/bike-welding-fixture/images/20260324_192135.jpg",
+            "content/bike-welding-fixture/images/20260324_192144.jpg",
+            "content/bike-welding-fixture/images/20260324_192231.jpg",
+            "content/bike-welding-fixture/images/20260324_192246.jpg",
+            "content/bike-welding-fixture/images/20260324_192300.jpg",
+            "content/bike-welding-fixture/images/20260324_193152.jpg",
+            "content/bike-welding-fixture/images/20260324_193200.jpg",
+            "content/bike-welding-fixture/images/20260324_193617.jpg",
+            "content/bike-welding-fixture/images/3106453382366094883.jpg",
+            "content/bike-welding-fixture/images/3861156482002020839.jpg",
+            "content/bike-welding-fixture/images/8087744433408114520.jpg",
+            "content/bike-welding-fixture/images/9177882566032132882.jpg",
+            "content/bike-welding-fixture/images/IMG_2016.JPG",
+            "content/bike-welding-fixture/images/IMG_2065.JPG",
+            "content/bike-welding-fixture/images/IMG_2078.JPG",
+            "content/bike-welding-fixture/images/IMG_2079.JPG",
+            "content/bike-welding-fixture/images/IMG_2080.JPG",
+            "content/bike-welding-fixture/images/IMG_2083.JPG",
+            "content/bike-welding-fixture/images/IMG_2085.JPG",
+            "content/bike-welding-fixture/images/IMG_2087.JPG",
+            "content/bike-welding-fixture/images/IMG_2841.JPG",
+            "content/bike-welding-fixture/images/IMG_2966.JPG",
+            "content/bike-welding-fixture/images/IMG_2967.JPG"
+          ]
+        }
       ]
     },
     "thumbnail_strip": [
       {
-        "slug": "exascale",
-        "title": "Exascale Systems",
-        "thumbnail": "content/exascale/images/arc-furnace.png",
-        "caption": "Motion System Design & Fabrication",
+        "slug": "electric-wheelchair",
+        "title": "Electric Wheelchair Attachment",
+        "thumbnail": "content/electric-wheelchair/images/mounted-device.jpg",
+        "caption": "Senior Capstone Project",
         "section": "project",
         "tags": [
-          "employment"
+          "school"
         ],
-        "employer": "Exascale Systems",
-        "date_start": "2022-06",
-        "date_end": "2023-05",
+        "employer": "Cooper Union",
+        "date_start": "2025-09",
+        "date_end": "2026-06",
         "order": 1,
         "visible": true,
         "headings": [
           {
-            "text": "Motion Controller For Arc Furnace",
-            "anchor": "exascale-motion-controller-for-arc-furnace"
+            "text": "Prototyping",
+            "anchor": "electric-wheelchair-prototyping"
           },
           {
-            "text": "Piezo Flexure Plate",
-            "anchor": "exascale-piezo-flexure-plate"
+            "text": "Drivetrain Design",
+            "anchor": "electric-wheelchair-drivetrain-design"
+          },
+          {
+            "text": "Battery",
+            "anchor": "electric-wheelchair-battery"
+          },
+          {
+            "text": "Controls",
+            "anchor": "electric-wheelchair-controls"
+          },
+          {
+            "text": "Testing",
+            "anchor": "electric-wheelchair-testing"
           }
         ],
         "images": [
-          "content/exascale/images/arc-furnace.png",
-          "content/exascale/images/electrode-motion.jpg",
-          "content/exascale/images/motion-controller-breakout.jpg",
-          "content/exascale/images/motion-controller-complete.jpg",
-          "content/exascale/images/motion-controller-schematic.jpg",
-          "content/exascale/images/motion-controller-testing.jpg"
+          "content/electric-wheelchair/images/20260326_170630.jpg",
+          "content/electric-wheelchair/images/20260416_223947.jpg",
+          "content/electric-wheelchair/images/IMG_0323.PNG",
+          "content/electric-wheelchair/images/IMG_0734.gif",
+          "content/electric-wheelchair/images/IMG_2062.JPG",
+          "content/electric-wheelchair/images/IMG_2064.JPG",
+          "content/electric-wheelchair/images/IMG_2964.JPG",
+          "content/electric-wheelchair/images/IMG_2997.JPG",
+          "content/electric-wheelchair/images/IMG_3036.JPG",
+          "content/electric-wheelchair/images/IMG_3066.gif",
+          "content/electric-wheelchair/images/IMG_3083.JPG",
+          "content/electric-wheelchair/images/IMG_3084.JPG",
+          "content/electric-wheelchair/images/IMG_3086.JPG",
+          "content/electric-wheelchair/images/IMG_3285.JPG",
+          "content/electric-wheelchair/images/IMG_3312.JPG",
+          "content/electric-wheelchair/images/IMG_3322.gif",
+          "content/electric-wheelchair/images/IMG_3331.JPG",
+          "content/electric-wheelchair/images/IMG_3353.JPG",
+          "content/electric-wheelchair/images/IMG_3354.JPG",
+          "content/electric-wheelchair/images/IMG_3391.JPG",
+          "content/electric-wheelchair/images/IMG_3398.JPG",
+          "content/electric-wheelchair/images/IMG_3430.JPG",
+          "content/electric-wheelchair/images/IMG_3441.JPG",
+          "content/electric-wheelchair/images/IMG_3447.JPG",
+          "content/electric-wheelchair/images/IMG_3461.JPG",
+          "content/electric-wheelchair/images/IMG_3475.JPG",
+          "content/electric-wheelchair/images/Pack_ASM (5).png",
+          "content/electric-wheelchair/images/Pack_ASM (6).png",
+          "content/electric-wheelchair/images/Pack_ASM (7).png",
+          "content/electric-wheelchair/images/cell_level_fusing.png",
+          "content/electric-wheelchair/images/mounted-device.JPG",
+          "content/electric-wheelchair/images/nickel_busbars.png",
+          "content/electric-wheelchair/images/pack_asm_1-3.png",
+          "content/electric-wheelchair/images/pack_asm_clear_1-1.png",
+          "content/electric-wheelchair/images/pack_asm_explode_1-2.png",
+          "content/electric-wheelchair/images/pack_concept_brainstorm.png",
+          "content/electric-wheelchair/images/pack_fuse_integration.png"
         ]
       },
       {
@@ -1205,44 +1569,131 @@
         ]
       },
       {
-        "slug": "iphone-repair",
-        "title": "iPhone Repair Business",
-        "thumbnail": "content/iphone-repair/images/phone-glow.gif",
-        "caption": "Freelance Repair & LED Projects, 2018–2020",
+        "slug": "bike-welding-fixture",
+        "title": "Bicycle Welding Fixture",
+        "thumbnail": "/content/bike-welding-fixture/images/IMG_2967.JPG",
+        "caption": "Bicycle Welding Fixture",
         "section": "project",
         "tags": [
-          "freelance"
+          "school",
+          "bicycles",
+          "fabrication"
         ],
         "employer": null,
-        "date_start": "2018-09",
-        "date_end": "2020-05",
-        "order": 1,
+        "date_start": "2026-01",
+        "date_end": "present",
+        "order": 2,
         "visible": true,
         "headings": [
           {
-            "text": "Music Reactive Logo",
-            "anchor": "iphone-repair-music-reactive-logo"
+            "text": "Prototyping",
+            "anchor": "bike-welding-fixture-prototyping"
           },
           {
-            "text": "Small Assembly",
-            "anchor": "iphone-repair-small-assembly"
+            "text": "Fabrication",
+            "anchor": "bike-welding-fixture-fabrication"
           },
           {
-            "text": "Collected Broken LCDs",
-            "anchor": "iphone-repair-collected-broken-lcds"
+            "text": "Use & Performance",
+            "anchor": "bike-welding-fixture-use---performance"
           }
         ],
         "images": [
-          "content/iphone-repair/images/phone-asm-gif.gif",
-          "content/iphone-repair/images/phone-glow.gif",
-          "content/iphone-repair/images/phone-repair.png",
-          "content/iphone-repair/images/screen-collection.png"
+          "content/bike-welding-fixture/images/20251119_160918.jpg",
+          "content/bike-welding-fixture/images/20251119_162135.jpg",
+          "content/bike-welding-fixture/images/20251119_162500.jpg",
+          "content/bike-welding-fixture/images/20251119_162657.jpg",
+          "content/bike-welding-fixture/images/20251203_184504.jpg",
+          "content/bike-welding-fixture/images/20251204_153224.jpg",
+          "content/bike-welding-fixture/images/20260128_125202.jpg",
+          "content/bike-welding-fixture/images/20260211_161040.jpg",
+          "content/bike-welding-fixture/images/20260218_130855.jpg",
+          "content/bike-welding-fixture/images/20260218_182555.jpg",
+          "content/bike-welding-fixture/images/20260218_182557.jpg",
+          "content/bike-welding-fixture/images/20260218_182602.jpg",
+          "content/bike-welding-fixture/images/20260304_135946.jpg",
+          "content/bike-welding-fixture/images/20260324_191715.jpg",
+          "content/bike-welding-fixture/images/20260324_191718.jpg",
+          "content/bike-welding-fixture/images/20260324_191755.jpg",
+          "content/bike-welding-fixture/images/20260324_191758.jpg",
+          "content/bike-welding-fixture/images/20260324_191832.jpg",
+          "content/bike-welding-fixture/images/20260324_191856.jpg",
+          "content/bike-welding-fixture/images/20260324_191929.jpg",
+          "content/bike-welding-fixture/images/20260324_191931.jpg",
+          "content/bike-welding-fixture/images/20260324_191938.jpg",
+          "content/bike-welding-fixture/images/20260324_191947.jpg",
+          "content/bike-welding-fixture/images/20260324_192031.jpg",
+          "content/bike-welding-fixture/images/20260324_192111.jpg",
+          "content/bike-welding-fixture/images/20260324_192112.jpg",
+          "content/bike-welding-fixture/images/20260324_192115.jpg",
+          "content/bike-welding-fixture/images/20260324_192135.jpg",
+          "content/bike-welding-fixture/images/20260324_192144.jpg",
+          "content/bike-welding-fixture/images/20260324_192231.jpg",
+          "content/bike-welding-fixture/images/20260324_192246.jpg",
+          "content/bike-welding-fixture/images/20260324_192300.jpg",
+          "content/bike-welding-fixture/images/20260324_193152.jpg",
+          "content/bike-welding-fixture/images/20260324_193200.jpg",
+          "content/bike-welding-fixture/images/20260324_193617.jpg",
+          "content/bike-welding-fixture/images/3106453382366094883.jpg",
+          "content/bike-welding-fixture/images/3861156482002020839.jpg",
+          "content/bike-welding-fixture/images/8087744433408114520.jpg",
+          "content/bike-welding-fixture/images/9177882566032132882.jpg",
+          "content/bike-welding-fixture/images/IMG_2016.JPG",
+          "content/bike-welding-fixture/images/IMG_2065.JPG",
+          "content/bike-welding-fixture/images/IMG_2078.JPG",
+          "content/bike-welding-fixture/images/IMG_2079.JPG",
+          "content/bike-welding-fixture/images/IMG_2080.JPG",
+          "content/bike-welding-fixture/images/IMG_2083.JPG",
+          "content/bike-welding-fixture/images/IMG_2085.JPG",
+          "content/bike-welding-fixture/images/IMG_2087.JPG",
+          "content/bike-welding-fixture/images/IMG_2841.JPG",
+          "content/bike-welding-fixture/images/IMG_2966.JPG",
+          "content/bike-welding-fixture/images/IMG_2967.JPG"
+        ]
+      },
+      {
+        "slug": "electra",
+        "title": "Electra",
+        "thumbnail": "content/electra/images/IMG_0873.JPG",
+        "caption": "Induction Stove Engineering",
+        "section": "project",
+        "tags": [
+          "employment"
+        ],
+        "employer": "Electra",
+        "date_start": "2024-11",
+        "date_end": "2025-09",
+        "order": 2,
+        "visible": true,
+        "headings": [],
+        "images": [
+          "content/electra/images/IMG_0559.JPG",
+          "content/electra/images/IMG_0619.JPG",
+          "content/electra/images/IMG_0819.JPG",
+          "content/electra/images/IMG_0850.JPG",
+          "content/electra/images/IMG_0855.JPG",
+          "content/electra/images/IMG_0867.JPG",
+          "content/electra/images/IMG_0871.JPG",
+          "content/electra/images/IMG_0872.JPG",
+          "content/electra/images/IMG_0873.JPG",
+          "content/electra/images/IMG_0874.JPG",
+          "content/electra/images/IMG_0875.JPG",
+          "content/electra/images/IMG_1064.JPG",
+          "content/electra/images/IMG_1074.JPG",
+          "content/electra/images/Screenshot 2025-04-26 at 10.07.47 PM.png",
+          "content/electra/images/Screenshot 2025-04-26 at 10.08.17 PM.png",
+          "content/electra/images/Screenshot 2025-04-26 at 10.09.48 PM.png",
+          "content/electra/images/Screenshot 2025-04-26 at 10.10.12 PM.png",
+          "content/electra/images/Screenshot 2025-04-26 at 10.11.21 PM.png",
+          "content/electra/images/Screenshot 2025-04-26 at 10.12.50 PM.png",
+          "content/electra/images/Screenshot 2025-04-26 at 10.13.28 PM.png",
+          "content/electra/images/Screenshot 2025-04-26 at 10.14.04 PM.png"
         ]
       },
       {
         "slug": "gnctr",
         "title": "GNCTR",
-        "thumbnail": "content/gnctr/images/image.png",
+        "thumbnail": "content/gnctr/images/Full_ASM_CAD.png",
         "caption": "3rd Overall out of 18 teams, 2026",
         "section": "project",
         "tags": [
@@ -1309,35 +1760,41 @@
         ]
       },
       {
-        "slug": "new-amsterdam",
-        "title": "New Amsterdam Metalworks",
-        "thumbnail": "content/new-amsterdam/images/kitchen-hood-complete.png",
-        "caption": "Fabrication & Design",
+        "slug": "experimental-pump",
+        "title": "Experimental Pump Design",
+        "thumbnail": "/content/experimental-pump/images/IMG_7185.PNG",
+        "caption": "Fluid Mechanics Research",
         "section": "project",
         "tags": [
-          "employment"
+          "school"
         ],
-        "employer": "New Amsterdam Metalworks",
-        "date_start": "2021-06",
-        "date_end": "2022-05",
-        "order": 2,
+        "employer": "Cooper Union",
+        "date_start": "2025-01",
+        "date_end": "2026-01",
+        "order": 3,
         "visible": true,
         "headings": [
           {
-            "text": "Robotic Kitchen Hood",
-            "anchor": "new-amsterdam-robotic-kitchen-hood"
+            "text": "Design",
+            "anchor": "experimental-pump-design"
           },
           {
-            "text": "Steel Roof Deck",
-            "anchor": "new-amsterdam-steel-roof-deck"
+            "text": "Testing",
+            "anchor": "experimental-pump-testing"
           }
         ],
         "images": [
-          "content/new-amsterdam/images/deck-asm.png",
-          "content/new-amsterdam/images/deck-cad.png",
-          "content/new-amsterdam/images/kitchen-hood-asm.jpg",
-          "content/new-amsterdam/images/kitchen-hood-cad.jpg",
-          "content/new-amsterdam/images/kitchen-hood-complete.png"
+          "content/experimental-pump/images/AF789D41-2E74-47F5-94E1-20F865DF06C9_1_105_c.jpeg",
+          "content/experimental-pump/images/B053FD3E-B41E-4600-947F-93F67471A6F1_1_105_c.jpeg",
+          "content/experimental-pump/images/C06C91C4-9A5A-4D84-90D9-5ED2FEE14D01_1_105_c.jpeg",
+          "content/experimental-pump/images/FC09BB4C-2464-475B-8DC0-C7BBB61EA43D_1_105_c.jpeg",
+          "content/experimental-pump/images/IMG_0127.JPG",
+          "content/experimental-pump/images/IMG_0138.JPG",
+          "content/experimental-pump/images/IMG_0153.gif",
+          "content/experimental-pump/images/IMG_7185.PNG",
+          "content/experimental-pump/images/IMG_7186.PNG",
+          "content/experimental-pump/images/IMG_7228.JPG",
+          "content/experimental-pump/images/IMG_7230.JPG"
         ]
       },
       {
@@ -1387,6 +1844,107 @@
           "content/frc/images/steering-pid.gif",
           "content/frc/images/swerve-asm.gif",
           "content/frc/images/swerve-module-asm.png"
+        ]
+      },
+      {
+        "slug": "exascale",
+        "title": "Exascale Systems",
+        "thumbnail": "content/exascale/images/arc-furnace.png",
+        "caption": "Motion System Design & Fabrication",
+        "section": "project",
+        "tags": [
+          "employment"
+        ],
+        "employer": "Exascale Systems",
+        "date_start": "2022-06",
+        "date_end": "2023-05",
+        "order": 4,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Motion Controller For Arc Furnace",
+            "anchor": "exascale-motion-controller-for-arc-furnace"
+          },
+          {
+            "text": "Piezo Flexure Plate",
+            "anchor": "exascale-piezo-flexure-plate"
+          }
+        ],
+        "images": [
+          "content/exascale/images/IMG_2450.jpg",
+          "content/exascale/images/arc-furnace.png",
+          "content/exascale/images/electrode-motion.jpg",
+          "content/exascale/images/motion-controller-breakout.jpg",
+          "content/exascale/images/motion-controller-complete.jpg",
+          "content/exascale/images/motion-controller-schematic.jpg",
+          "content/exascale/images/motion-controller-testing.jpg"
+        ]
+      },
+      {
+        "slug": "new-amsterdam",
+        "title": "New Amsterdam Metalworks",
+        "thumbnail": "content/new-amsterdam/images/kitchen-hood-complete.png",
+        "caption": "Fabrication & Design",
+        "section": "project",
+        "tags": [
+          "employment"
+        ],
+        "employer": "New Amsterdam Metalworks",
+        "date_start": "2021-06",
+        "date_end": "2022-05",
+        "order": 4,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Robotic Kitchen Hood",
+            "anchor": "new-amsterdam-robotic-kitchen-hood"
+          },
+          {
+            "text": "Steel Roof Deck",
+            "anchor": "new-amsterdam-steel-roof-deck"
+          }
+        ],
+        "images": [
+          "content/new-amsterdam/images/deck-asm.png",
+          "content/new-amsterdam/images/deck-cad.png",
+          "content/new-amsterdam/images/kitchen-hood-asm.jpg",
+          "content/new-amsterdam/images/kitchen-hood-cad.jpg",
+          "content/new-amsterdam/images/kitchen-hood-complete.png"
+        ]
+      },
+      {
+        "slug": "iphone-repair",
+        "title": "iPhone Repair Business",
+        "thumbnail": "content/iphone-repair/images/phone-glow.gif",
+        "caption": "Freelance Repair & LED Projects, 2018–2020",
+        "section": "project",
+        "tags": [
+          "freelance"
+        ],
+        "employer": null,
+        "date_start": "2018-09",
+        "date_end": "2020-05",
+        "order": 6,
+        "visible": true,
+        "headings": [
+          {
+            "text": "Music Reactive Logo",
+            "anchor": "iphone-repair-music-reactive-logo"
+          },
+          {
+            "text": "Small Assembly",
+            "anchor": "iphone-repair-small-assembly"
+          },
+          {
+            "text": "Collected Broken LCDs",
+            "anchor": "iphone-repair-collected-broken-lcds"
+          }
+        ],
+        "images": [
+          "content/iphone-repair/images/phone-asm-gif.gif",
+          "content/iphone-repair/images/phone-glow.gif",
+          "content/iphone-repair/images/phone-repair.png",
+          "content/iphone-repair/images/screen-collection.png"
         ]
       }
     ]
