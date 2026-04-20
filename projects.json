@@ -742,9 +742,7 @@
       "employment",
       "competitive",
       "school",
-      "freelance",
-      "bicycles",
-      "fabrication"
+      "freelance"
     ],
     "groups": {
       "employment": [
@@ -1065,9 +1063,7 @@
           "caption": "Bicycle Welding Fixture",
           "section": "project",
           "tags": [
-            "school",
-            "bicycles",
-            "fabrication"
+            "school"
           ],
           "employer": null,
           "date_start": "2026-01",
@@ -1310,176 +1306,6 @@
             "content/iphone-repair/images/screen-collection.png"
           ]
         }
-      ],
-      "bicycles": [
-        {
-          "slug": "bike-welding-fixture",
-          "title": "Bicycle Welding Fixture",
-          "thumbnail": "/content/bike-welding-fixture/images/IMG_2967.JPG",
-          "caption": "Bicycle Welding Fixture",
-          "section": "project",
-          "tags": [
-            "school",
-            "bicycles",
-            "fabrication"
-          ],
-          "employer": null,
-          "date_start": "2026-01",
-          "date_end": "present",
-          "order": 2,
-          "visible": true,
-          "headings": [
-            {
-              "text": "Prototyping",
-              "anchor": "bike-welding-fixture-prototyping"
-            },
-            {
-              "text": "Fabrication",
-              "anchor": "bike-welding-fixture-fabrication"
-            },
-            {
-              "text": "Use & Performance",
-              "anchor": "bike-welding-fixture-use---performance"
-            }
-          ],
-          "images": [
-            "content/bike-welding-fixture/images/20251119_160918.jpg",
-            "content/bike-welding-fixture/images/20251119_162135.jpg",
-            "content/bike-welding-fixture/images/20251119_162500.jpg",
-            "content/bike-welding-fixture/images/20251119_162657.jpg",
-            "content/bike-welding-fixture/images/20251203_184504.jpg",
-            "content/bike-welding-fixture/images/20251204_153224.jpg",
-            "content/bike-welding-fixture/images/20260128_125202.jpg",
-            "content/bike-welding-fixture/images/20260211_161040.jpg",
-            "content/bike-welding-fixture/images/20260218_130855.jpg",
-            "content/bike-welding-fixture/images/20260218_182555.jpg",
-            "content/bike-welding-fixture/images/20260218_182557.jpg",
-            "content/bike-welding-fixture/images/20260218_182602.jpg",
-            "content/bike-welding-fixture/images/20260304_135946.jpg",
-            "content/bike-welding-fixture/images/20260324_191715.jpg",
-            "content/bike-welding-fixture/images/20260324_191718.jpg",
-            "content/bike-welding-fixture/images/20260324_191755.jpg",
-            "content/bike-welding-fixture/images/20260324_191758.jpg",
-            "content/bike-welding-fixture/images/20260324_191832.jpg",
-            "content/bike-welding-fixture/images/20260324_191856.jpg",
-            "content/bike-welding-fixture/images/20260324_191929.jpg",
-            "content/bike-welding-fixture/images/20260324_191931.jpg",
-            "content/bike-welding-fixture/images/20260324_191938.jpg",
-            "content/bike-welding-fixture/images/20260324_191947.jpg",
-            "content/bike-welding-fixture/images/20260324_192031.jpg",
-            "content/bike-welding-fixture/images/20260324_192111.jpg",
-            "content/bike-welding-fixture/images/20260324_192112.jpg",
-            "content/bike-welding-fixture/images/20260324_192115.jpg",
-            "content/bike-welding-fixture/images/20260324_192135.jpg",
-            "content/bike-welding-fixture/images/20260324_192144.jpg",
-            "content/bike-welding-fixture/images/20260324_192231.jpg",
-            "content/bike-welding-fixture/images/20260324_192246.jpg",
-            "content/bike-welding-fixture/images/20260324_192300.jpg",
-            "content/bike-welding-fixture/images/20260324_193152.jpg",
-            "content/bike-welding-fixture/images/20260324_193200.jpg",
-            "content/bike-welding-fixture/images/20260324_193617.jpg",
-            "content/bike-welding-fixture/images/3106453382366094883.jpg",
-            "content/bike-welding-fixture/images/3861156482002020839.jpg",
-            "content/bike-welding-fixture/images/8087744433408114520.jpg",
-            "content/bike-welding-fixture/images/9177882566032132882.jpg",
-            "content/bike-welding-fixture/images/IMG_2016.JPG",
-            "content/bike-welding-fixture/images/IMG_2065.JPG",
-            "content/bike-welding-fixture/images/IMG_2078.JPG",
-            "content/bike-welding-fixture/images/IMG_2079.JPG",
-            "content/bike-welding-fixture/images/IMG_2080.JPG",
-            "content/bike-welding-fixture/images/IMG_2083.JPG",
-            "content/bike-welding-fixture/images/IMG_2085.JPG",
-            "content/bike-welding-fixture/images/IMG_2087.JPG",
-            "content/bike-welding-fixture/images/IMG_2841.JPG",
-            "content/bike-welding-fixture/images/IMG_2966.JPG",
-            "content/bike-welding-fixture/images/IMG_2967.JPG"
-          ]
-        }
-      ],
-      "fabrication": [
-        {
-          "slug": "bike-welding-fixture",
-          "title": "Bicycle Welding Fixture",
-          "thumbnail": "/content/bike-welding-fixture/images/IMG_2967.JPG",
-          "caption": "Bicycle Welding Fixture",
-          "section": "project",
-          "tags": [
-            "school",
-            "bicycles",
-            "fabrication"
-          ],
-          "employer": null,
-          "date_start": "2026-01",
-          "date_end": "present",
-          "order": 2,
-          "visible": true,
-          "headings": [
-            {
-              "text": "Prototyping",
-              "anchor": "bike-welding-fixture-prototyping"
-            },
-            {
-              "text": "Fabrication",
-              "anchor": "bike-welding-fixture-fabrication"
-            },
-            {
-              "text": "Use & Performance",
-              "anchor": "bike-welding-fixture-use---performance"
-            }
-          ],
-          "images": [
-            "content/bike-welding-fixture/images/20251119_160918.jpg",
-            "content/bike-welding-fixture/images/20251119_162135.jpg",
-            "content/bike-welding-fixture/images/20251119_162500.jpg",
-            "content/bike-welding-fixture/images/20251119_162657.jpg",
-            "content/bike-welding-fixture/images/20251203_184504.jpg",
-            "content/bike-welding-fixture/images/20251204_153224.jpg",
-            "content/bike-welding-fixture/images/20260128_125202.jpg",
-            "content/bike-welding-fixture/images/20260211_161040.jpg",
-            "content/bike-welding-fixture/images/20260218_130855.jpg",
-            "content/bike-welding-fixture/images/20260218_182555.jpg",
-            "content/bike-welding-fixture/images/20260218_182557.jpg",
-            "content/bike-welding-fixture/images/20260218_182602.jpg",
-            "content/bike-welding-fixture/images/20260304_135946.jpg",
-            "content/bike-welding-fixture/images/20260324_191715.jpg",
-            "content/bike-welding-fixture/images/20260324_191718.jpg",
-            "content/bike-welding-fixture/images/20260324_191755.jpg",
-            "content/bike-welding-fixture/images/20260324_191758.jpg",
-            "content/bike-welding-fixture/images/20260324_191832.jpg",
-            "content/bike-welding-fixture/images/20260324_191856.jpg",
-            "content/bike-welding-fixture/images/20260324_191929.jpg",
-            "content/bike-welding-fixture/images/20260324_191931.jpg",
-            "content/bike-welding-fixture/images/20260324_191938.jpg",
-            "content/bike-welding-fixture/images/20260324_191947.jpg",
-            "content/bike-welding-fixture/images/20260324_192031.jpg",
-            "content/bike-welding-fixture/images/20260324_192111.jpg",
-            "content/bike-welding-fixture/images/20260324_192112.jpg",
-            "content/bike-welding-fixture/images/20260324_192115.jpg",
-            "content/bike-welding-fixture/images/20260324_192135.jpg",
-            "content/bike-welding-fixture/images/20260324_192144.jpg",
-            "content/bike-welding-fixture/images/20260324_192231.jpg",
-            "content/bike-welding-fixture/images/20260324_192246.jpg",
-            "content/bike-welding-fixture/images/20260324_192300.jpg",
-            "content/bike-welding-fixture/images/20260324_193152.jpg",
-            "content/bike-welding-fixture/images/20260324_193200.jpg",
-            "content/bike-welding-fixture/images/20260324_193617.jpg",
-            "content/bike-welding-fixture/images/3106453382366094883.jpg",
-            "content/bike-welding-fixture/images/3861156482002020839.jpg",
-            "content/bike-welding-fixture/images/8087744433408114520.jpg",
-            "content/bike-welding-fixture/images/9177882566032132882.jpg",
-            "content/bike-welding-fixture/images/IMG_2016.JPG",
-            "content/bike-welding-fixture/images/IMG_2065.JPG",
-            "content/bike-welding-fixture/images/IMG_2078.JPG",
-            "content/bike-welding-fixture/images/IMG_2079.JPG",
-            "content/bike-welding-fixture/images/IMG_2080.JPG",
-            "content/bike-welding-fixture/images/IMG_2083.JPG",
-            "content/bike-welding-fixture/images/IMG_2085.JPG",
-            "content/bike-welding-fixture/images/IMG_2087.JPG",
-            "content/bike-welding-fixture/images/IMG_2841.JPG",
-            "content/bike-welding-fixture/images/IMG_2966.JPG",
-            "content/bike-welding-fixture/images/IMG_2967.JPG"
-          ]
-        }
       ]
     },
     "thumbnail_strip": [
@@ -1633,9 +1459,7 @@
         "caption": "Bicycle Welding Fixture",
         "section": "project",
         "tags": [
-          "school",
-          "bicycles",
-          "fabrication"
+          "school"
         ],
         "employer": null,
         "date_start": "2026-01",

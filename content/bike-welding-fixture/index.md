@@ -3,7 +3,7 @@ title: "Bicycle Welding Fixture"
 thumbnail: /content/bike-welding-fixture/images/IMG_2967.JPG
 caption: "Bicycle Welding Fixture"
 section: project
-tags: [school, bicycles, fabrication]
+tags: [school]
 date_start: 2026-01
 date_end: present
 order: 2
