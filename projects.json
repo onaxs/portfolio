@@ -1253,10 +1253,10 @@
           ]
         },
         {
-          "slug": "quantum-research",
-          "title": "Quantum Entanglement Research",
+          "slug": "doppler-cooling-simulation",
+          "title": "Doppler Cooling Simulation",
           "thumbnail": null,
-          "caption": "Research Assistant",
+          "caption": "Interactive 1D laser cooling sim",
           "section": "project",
           "tags": [
             "school"
@@ -1265,7 +1265,7 @@
           "date_start": "2023-09",
           "date_end": "2024-05",
           "order": 5,
-          "visible": false,
+          "visible": true,
           "headings": [],
           "images": []
         }
@@ -1793,6 +1793,23 @@
           "content/new-amsterdam/images/kitchen-hood-cad.jpg",
           "content/new-amsterdam/images/kitchen-hood-complete.png"
         ]
+      },
+      {
+        "slug": "doppler-cooling-simulation",
+        "title": "Doppler Cooling Simulation",
+        "thumbnail": null,
+        "caption": "Interactive 1D laser cooling sim",
+        "section": "project",
+        "tags": [
+          "school"
+        ],
+        "employer": "Cooper Union",
+        "date_start": "2023-09",
+        "date_end": "2024-05",
+        "order": 5,
+        "visible": true,
+        "headings": [],
+        "images": []
       },
       {
         "slug": "iphone-repair",

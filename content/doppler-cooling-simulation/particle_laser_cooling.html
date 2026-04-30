@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1D Particle Laser Cooling Simulation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 20px;
+            background: #1a1a1a;
+            border-bottom: 1px solid #333;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #canvas {
+            flex: 1;
+            display: block;
+            background: #000;
+            border: none;
+        }
+
+        .controls-container {
+            background: #1a1a1a;
+            border-top: 1px solid #333;
+            padding: 15px 20px;
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: 200px 200px 1fr;
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .control-group {
+            background: #222;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+
+        .control-group.laser-controls {
+            grid-column: 3;
+        }
+
+        .control-group h3 {
+            margin-bottom: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fff;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+
+        .control-item {
+            margin-bottom: 8px;
+        }
+
+        .control-item:last-child {
+            margin-bottom: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 11px;
+            color: #ccc;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+
+        .value-display {
+            font-size: 10px;
+            color: #888;
+            text-align: right;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .checkbox-group label {
+            margin-bottom: 0;
+            font-size: 11px;
+        }
+
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px 20px;
+            font-size: 13px;
+            border: 1px solid #555;
+            border-radius: 3px;
+            cursor: pointer;
+            background: #333;
+            color: #fff;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        button:active {
+            background: #222;
+        }
+    </style>
+</head>
+<body>
+    <h1>1D Particle Laser Cooling Simulation</h1>
+
+    <div class="main-content">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="controls-container">
+        <div class="controls">
+            <div class="control-group">
+                <h3>Particle Properties</h3>
+                <div class="control-item">
+                    <label for="mass">Mass (amu)</label>
+                    <input type="range" id="mass" min="1" max="200" step="1" value="1">
+                    <div class="value-display" id="mass-value">1 amu</div>
+                </div>
+                <div class="control-item">
+                    <label for="initialVelocity">Initial Velocity (vx)</label>
+                    <input type="range" id="initialVelocity" min="-5000" max="5000" step="10" value="250">
+                    <div class="value-display" id="initialVelocity-value">250</div>
+                </div>
+                <div class="control-item">
+                    <label for="transitionEnergy">Transition Frequency (f_t)</label>
+                    <input type="range" id="transitionEnergy" min="1" max="20" step="0.1" value="17">
+                    <div class="value-display" id="transitionEnergy-value">17.0</div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Simulation Properties</h3>
+                <div class="control-item">
+                    <label for="boundaryRadius">Boundary Radius</label>
+                    <input type="range" id="boundaryRadius" min="50" max="350" step="10" value="280">
+                    <div class="value-display" id="boundaryRadius-value">280</div>
+                </div>
+                <div class="control-item">
+                    <label for="timeScale">Time Scale</label>
+                    <input type="range" id="timeScale" min="0.1" max="5" step="0.1" value="3">
+                    <div class="value-display" id="timeScale-value">3.0</div>
+                </div>
+                <div class="control-item">
+                    <label for="resonanceTolerance">Resonance Margin (%)</label>
+                    <input type="range" id="resonanceTolerance" min="0.1" max="50" step="0.1" value="10">
+                    <div class="value-display" id="resonanceTolerance-value">10.0%</div>
+                </div>
+            </div>
+
+            <div class="control-group laser-controls">
+                <h3>Laser Controls</h3>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="leftLaserOn">
+                    <label for="leftLaserOn">Left Laser ON</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="rightLaserOn">
+                    <label for="rightLaserOn">Right Laser ON</label>
+                </div>
+                <div class="control-item">
+                    <label for="laserFreq">Laser Frequency (f_0)</label>
+                    <input type="range" id="laserFreq" min="1" max="20" step="0.1" value="9.5">
+                    <div class="value-display" id="laserFreq-value">9.5</div>
+                </div>
+                <div class="buttons">
+                    <button id="playPauseBtn">Play</button>
+                    <button id="resetBtn">Reset</button>
+                    <button id="chirpBtn">Chirp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import Physics Engine -->
+    <script src="physics.js"></script>
+
+    <script>
+        // Get canvas and context
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Get UI elements
+        const massSlider = document.getElementById('mass');
+        const initialVelocitySlider = document.getElementById('initialVelocity');
+        const boundaryRadiusSlider = document.getElementById('boundaryRadius');
+        const transitionEnergySlider = document.getElementById('transitionEnergy');
+        const resonanceToleranceSlider = document.getElementById('resonanceTolerance');
+        const timeScaleSlider = document.getElementById('timeScale');
+
+        const leftLaserOnCheckbox = document.getElementById('leftLaserOn');
+        const rightLaserOnCheckbox = document.getElementById('rightLaserOn');
+        const laserFreqSlider = document.getElementById('laserFreq');
+
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const chirpBtn = document.getElementById('chirpBtn');
+
+        // Canvas resize handling
+        let centerX, centerY;
+
+        function resizeCanvas() {
+            const container = canvas.parentElement;
+            canvas.width = container.clientWidth;
+            canvas.height = container.clientHeight;
+            centerX = canvas.width / 2;
+            centerY = canvas.height / 2;
+        }
+
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Update value displays
+        function updateValueDisplays() {
+            document.getElementById('mass-value').textContent = massSlider.value + ' amu';
+            document.getElementById('initialVelocity-value').textContent = initialVelocitySlider.value;
+            document.getElementById('boundaryRadius-value').textContent = boundaryRadiusSlider.value;
+            document.getElementById('transitionEnergy-value').textContent = parseFloat(transitionEnergySlider.value).toFixed(1);
+            document.getElementById('resonanceTolerance-value').textContent = parseFloat(resonanceToleranceSlider.value).toFixed(1) + '%';
+            document.getElementById('timeScale-value').textContent = parseFloat(timeScaleSlider.value).toFixed(1);
+            document.getElementById('laserFreq-value').textContent = parseFloat(laserFreqSlider.value).toFixed(1);
+        }
+
+        // Add event listeners for sliders
+        const sliders = document.querySelectorAll('input[type="range"]');
+        sliders.forEach(slider => {
+            slider.addEventListener('input', updateValueDisplays);
+        });
+
+        updateValueDisplays();
+
+        // Simulation state
+        let isRunning = false;
+        let lastTime = performance.now();
+        let animationTime = 0;
+
+        // Chirp state
+        let isChirping = false;
+
+        // Particle state
+        let x = 0;  // position relative to center
+        let vx = parseFloat(initialVelocitySlider.value);  // velocity
+
+        // Emitted particles array
+        let emittedParticles = [];
+        let lastEmissionTime = 0;
+
+        // Physical constants
+        const AMU_TO_KG = 1.66054e-27;  // Conversion factor from amu to kg (1 amu ≈ 1.66054×10⁻²⁷ kg)
+
+        // Visual constants
+        const laserVizScale = 0.5;  // for visual wave animation
+        const laserAmplitude = 45;  // fixed visual amplitude for laser waves
+
+        // Play/Pause functionality
+        playPauseBtn.addEventListener('click', () => {
+            isRunning = !isRunning;
+            playPauseBtn.textContent = isRunning ? 'Pause' : 'Play';
+            if (isRunning) {
+                lastTime = performance.now();
+            }
+        });
+
+        // Reset functionality
+        resetBtn.addEventListener('click', () => {
+            x = 0;
+            vx = parseFloat(initialVelocitySlider.value);
+            animationTime = 0;
+            isChirping = false;
+            chirpBtn.textContent = 'Chirp';
+            chirpBtn.style.background = '#333';
+            emittedParticles = [];
+            lastEmissionTime = 0;
+        });
+
+        // Chirp functionality
+        chirpBtn.addEventListener('click', () => {
+            isChirping = !isChirping;
+            chirpBtn.textContent = isChirping ? 'Stop Chirp' : 'Chirp';
+            chirpBtn.style.background = isChirping ? '#555' : '#333';
+        });
+
+        // Keyboard controls for laser frequency slider
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                const step = 0.1;
+                const currentValue = parseFloat(laserFreqSlider.value);
+
+                if (e.key === 'ArrowLeft') {
+                    // Decrease frequency
+                    const newValue = Math.max(1, currentValue - step);
+                    laserFreqSlider.value = newValue;
+                } else if (e.key === 'ArrowRight') {
+                    // Increase frequency
+                    const newValue = Math.min(20, currentValue + step);
+                    laserFreqSlider.value = newValue;
+                }
+
+                updateValueDisplays();
+                e.preventDefault(); // Prevent page scrolling
+            }
+        });
+
+        // Convert frequency to RGB color (visible spectrum mapping)
+        // Maps frequency range (1-20) to visible light spectrum
+        // Red = lowest frequency (longest wavelength), Purple = highest frequency (shortest wavelength)
+        function frequencyToColor(freq) {
+            // Clamp frequency to valid range for color mapping
+            const minFreq = 1;
+            const maxFreq = 20;
+            const clampedFreq = Math.max(minFreq, Math.min(maxFreq, freq));
+            const normalized = (clampedFreq - minFreq) / (maxFreq - minFreq);
+
+            // Map to visible spectrum: red (low freq, long wavelength) -> violet (high freq, short wavelength)
+            // normalized goes from 0 (red) to 1 (violet)
+            const hue = normalized * 270; // 0° (red) to 270° (violet)
+
+            // Convert HSL to RGB
+            const h = hue / 60;
+            const c = 255;
+            const x = c * (1 - Math.abs((h % 2) - 1));
+
+            let r, g, b;
+            if (h < 1) { r = c; g = x; b = 0; }
+            else if (h < 2) { r = x; g = c; b = 0; }
+            else if (h < 3) { r = 0; g = c; b = x; }
+            else if (h < 4) { r = 0; g = x; b = c; }
+            else { r = x; g = 0; b = c; }
+
+            return `rgb(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)})`;
+        }
+
+        // Physics update wrapper - delegates to physics engine
+        function updatePhysics(dt) {
+            if (!isRunning) return;
+
+            const massAmu = parseFloat(massSlider.value);
+            const massKg = massAmu * AMU_TO_KG;  // Convert amu to kg for physics calculations
+            const boundaryRadius = parseFloat(boundaryRadiusSlider.value);
+            const transitionFreq = parseFloat(transitionEnergySlider.value);
+            const resonanceTolerance = parseFloat(resonanceToleranceSlider.value);
+            const leftLaserOn = leftLaserOnCheckbox.checked;
+            const rightLaserOn = rightLaserOnCheckbox.checked;
+            let laserFreq = parseFloat(laserFreqSlider.value);
+
+            // Chirp functionality: adjust f_0 so that f_s = f_t
+            if (isChirping && Math.abs(vx) > 0.1) {
+                // Calculate required f_0 to achieve f_s = f_t
+                // From Doppler formula: f_s = f_0 * (c + v_r) / (c + v_s)
+                // We want: f_t = f_0 * (c + v_r) / (c + v_s)
+                // Therefore: f_0 = f_t * (c + v_s) / (c + v_r)
+
+                const c = PhysicsEngine.constants.c;
+                const v_s = PhysicsEngine.constants.v_s;
+                const VELOCITY_SCALE = PhysicsEngine.constants.VELOCITY_SCALE;
+
+                // v_r is positive when particle moves toward laser
+                // If particle moving right (vx > 0), right laser is active
+                // If particle moving left (vx < 0), left laser is active
+                const v_r = Math.abs(vx) * VELOCITY_SCALE;
+
+                // Calculate f_0 needed to make f_s = f_t
+                const f_0_required = transitionFreq * (c + v_s) / (c + v_r);
+
+                // Update laser frequency slider and value
+                laserFreq = f_0_required;
+                laserFreqSlider.value = Math.max(1, Math.min(20, f_0_required));
+                updateValueDisplays();
+            }
+
+            // Auto-stop chirp when velocity is near zero
+            if (isChirping && Math.abs(vx) <= 0.1) {
+                isChirping = false;
+                chirpBtn.textContent = 'Chirp';
+                chirpBtn.style.background = '#333';
+            }
+
+            // Update physics using the physics engine
+            const state = { x, vx };
+            const params = {
+                m: massKg,  // Pass mass in kg
+                boundaryRadius,
+                transitionFreq,
+                resonanceTolerance,
+                leftLaserOn,
+                rightLaserOn,
+                leftLaserFreq: laserFreq,
+                rightLaserFreq: laserFreq
+            };
+
+            const newState = PhysicsEngine.updatePhysics(state, params, dt);
+            x = newState.x;
+            vx = newState.vx;
+        }
+
+        // Draw laser wave
+        function drawLaser(startX, endX, y, frequency, amplitude, isOn, color, direction) {
+            ctx.strokeStyle = isOn ? color : 'rgba(100, 100, 100, 0.3)';
+            ctx.lineWidth = isOn ? 2 : 1;
+            ctx.beginPath();
+
+            const steps = Math.abs(endX - startX);
+            for (let i = 0; i <= steps; i++) {
+                const xPos = startX + (endX - startX) * i / steps;
+                // For waves traveling right (direction > 0), phase decreases with position
+                // For waves traveling left (direction < 0), phase increases with position
+                const spatialPhase = direction > 0
+                    ? -(i / steps) * Math.PI * 4 * frequency / 10
+                    : (i / steps) * Math.PI * 4 * frequency / 10;
+                const timePhase = animationTime * frequency * laserVizScale * direction;
+                const yOffset = amplitude * Math.sin(spatialPhase + timePhase);
+
+                if (i === 0) {
+                    ctx.moveTo(xPos, y + yOffset);
+                } else {
+                    ctx.lineTo(xPos, y + yOffset);
+                }
+            }
+
+            ctx.stroke();
+
+            // Draw arrow to show direction
+            if (isOn) {
+                ctx.fillStyle = color;
+                const arrowX = direction > 0 ? endX - 20 : endX + 20;
+                ctx.beginPath();
+                ctx.moveTo(arrowX, y);
+                ctx.lineTo(arrowX - direction * 10, y - 5);
+                ctx.lineTo(arrowX - direction * 10, y + 5);
+                ctx.closePath();
+                ctx.fill();
+            }
+        }
+
+        // Render function
+        function render() {
+            // Clear canvas
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            const boundaryRadius = parseFloat(boundaryRadiusSlider.value);
+            const massAmu = parseFloat(massSlider.value);
+
+            // Draw boundary circle
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, boundaryRadius, 0, Math.PI * 2);
+            ctx.stroke();
+
+            // Draw horizontal axis
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(centerX - boundaryRadius - 20, centerY);
+            ctx.lineTo(centerX + boundaryRadius + 20, centerY);
+            ctx.stroke();
+
+            // Draw lasers
+            const leftLaserOn = leftLaserOnCheckbox.checked;
+            const rightLaserOn = rightLaserOnCheckbox.checked;
+            const laserFreq = parseFloat(laserFreqSlider.value);
+            const transitionFreq = parseFloat(transitionEnergySlider.value);
+            const resonanceTolerance = parseFloat(resonanceToleranceSlider.value);
+
+            // Get laser color based on f_0
+            const laserColor = frequencyToColor(laserFreq);
+
+            // Left laser (travels right)
+            drawLaser(
+                0,
+                centerX - boundaryRadius - 10,
+                centerY,
+                laserFreq,
+                laserAmplitude,
+                leftLaserOn,
+                laserColor,
+                1
+            );
+
+            // Right laser (travels left)
+            drawLaser(
+                canvas.width,
+                centerX + boundaryRadius + 10,
+                centerY,
+                laserFreq,
+                laserAmplitude,
+                rightLaserOn,
+                laserColor,
+                -1
+            );
+
+            // Draw particle
+            // Calculate f_s (Doppler-shifted frequency) based on particle velocity
+            // Determine which laser the particle is moving toward
+            let f_s = 0;  // Default to 0 unless assigned by calculation
+            if (Math.abs(vx) < 0.1) {
+                // Particle is stationary - no Doppler shift, f_s = f_0
+                f_s = laserFreq;
+            } else if (vx > 0 && rightLaserOn) {
+                // Moving toward right laser
+                f_s = PhysicsEngine.getDopplerShiftedFrequency(laserFreq, Math.abs(vx), true);
+            } else if (vx < 0 && leftLaserOn) {
+                // Moving toward left laser
+                f_s = PhysicsEngine.getDopplerShiftedFrequency(laserFreq, Math.abs(vx), true);
+            }
+            // If no conditions met (moving away from lasers or lasers off), f_s remains 0
+
+            // Particle core is f_t (transition frequency) color
+            const particleCoreColor = frequencyToColor(transitionFreq);
+            // Ring around particle is f_s (Doppler-shifted frequency) color
+            const particleRingColor = frequencyToColor(f_s);
+
+            // Calculate frequency difference for dynamic ring sizing
+            const freqDiff = Math.abs(f_s - transitionFreq);
+            const tolerance = transitionFreq * (resonanceTolerance / 100);
+
+            // Check if resonance is possible
+            // Resonance requires: simulation running AND at least one laser on
+            // If v=0, particle must have at least one laser active
+            const canResonance = isRunning && (leftLaserOn || rightLaserOn);
+
+            // Base sizes (15% larger than original)
+            const baseParticleRadius = 9.2;  // Was 8, now 8 * 1.15
+            const baseRingRadius = 17.25;    // Was 15, now 15 * 1.15
+            const maxRingRadius = baseRingRadius * 2 * 0.85;  // Double the base size, then reduced by 15%
+
+            // Calculate ring size based on frequency difference
+            // When freqDiff is 0, ring is at maximum (2x base)
+            // When freqDiff >= tolerance, ring is at base size
+            let ringRadius;
+            let ringGlow;
+
+            if (freqDiff <= tolerance && canResonance) {
+                // Within resonance tolerance - interpolate from max to base
+                const ratio = freqDiff / tolerance;  // 0 to 1
+                ringRadius = maxRingRadius - (maxRingRadius - baseRingRadius) * ratio;
+                ringGlow = 30 - 15 * ratio;  // Shadow blur from 30 to 15
+            } else {
+                // Outside resonance - normal size
+                ringRadius = baseRingRadius;
+                ringGlow = 15;
+            }
+
+            // Ring line width also increases slightly when closer to resonance
+            const ringLineWidth = freqDiff <= tolerance ? 3.5 + (1 - freqDiff / tolerance) * 1 : 3.5;
+
+            // Draw outer ring (f_s color) - only if f_s is not 0
+            if (f_s !== 0) {
+                ctx.strokeStyle = particleRingColor;
+                ctx.lineWidth = ringLineWidth;
+                ctx.shadowBlur = ringGlow;
+                ctx.shadowColor = particleRingColor;
+                ctx.beginPath();
+                ctx.arc(centerX + x, centerY, ringRadius, 0, Math.PI * 2);
+                ctx.stroke();
+                ctx.shadowBlur = 0;
+            }
+
+            // Draw particle core (f_t color)
+            ctx.fillStyle = particleCoreColor;
+            ctx.shadowBlur = 12;  // Increased from 10
+            ctx.shadowColor = particleCoreColor;
+            ctx.beginPath();
+            ctx.arc(centerX + x, centerY, baseParticleRadius, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.shadowBlur = 0;
+
+            // Draw particle trail with f_t color
+            ctx.strokeStyle = particleCoreColor.replace('rgb', 'rgba').replace(')', ', 0.3)');
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(centerX + x, centerY - 5);
+            ctx.lineTo(centerX + x - vx * 0.5, centerY);
+            ctx.lineTo(centerX + x, centerY + 5);
+            ctx.stroke();
+
+            // Emit particles when close to resonance
+            // Requires: simulation running AND at least one laser on
+            if (freqDiff <= tolerance && canResonance) {
+                // Emission rate proportional to how close we are to resonance
+                // When freqDiff = 0 (perfect resonance), emit most frequently
+                // When freqDiff = tolerance (edge of resonance), emit less frequently
+                const emissionRatio = 1 - (freqDiff / tolerance);  // 1 at perfect resonance, 0 at edge
+                const maxEmissionRate = 50;  // ms between emissions at perfect resonance
+                const minEmissionRate = 500;  // ms between emissions at edge of resonance
+                const emissionInterval = minEmissionRate - (minEmissionRate - maxEmissionRate) * emissionRatio;
+
+                const currentTime = performance.now();
+                if (currentTime - lastEmissionTime > emissionInterval) {
+                    // Emit a new particle
+                    const angle = Math.random() * Math.PI * 2;
+                    const speed = 100;  // Constant speed for all particles
+                    emittedParticles.push({
+                        x: centerX + x,
+                        y: centerY,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed,
+                        life: 1.0,  // 1.0 = full brightness, 0.0 = faded out
+                        color: particleCoreColor
+                    });
+                    lastEmissionTime = currentTime;
+                }
+            }
+
+            // Update and draw emitted particles
+            for (let i = emittedParticles.length - 1; i >= 0; i--) {
+                const particle = emittedParticles[i];
+
+                // Update position
+                particle.x += particle.vx * 0.016;  // Assuming ~60fps
+                particle.y += particle.vy * 0.016;
+
+                // Fade out over time
+                particle.life -= 0.01;
+
+                // Remove if fully faded
+                if (particle.life <= 0) {
+                    emittedParticles.splice(i, 1);
+                    continue;
+                }
+
+                // Draw particle with reduced brightness
+                const alpha = particle.life * 0.4;  // Max 40% opacity for lower brightness
+                const fadeColor = particle.color.replace('rgb', 'rgba').replace(')', `, ${alpha})`);
+
+                ctx.fillStyle = fadeColor;
+                ctx.shadowBlur = 5 * particle.life;
+                ctx.shadowColor = fadeColor;
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, 3, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.shadowBlur = 0;
+            }
+
+            // Draw frequency display (centered below title)
+            ctx.font = 'bold 18px "Courier New", monospace';
+            ctx.textAlign = 'center';
+
+            const freqY = 50;
+            const freqSpacing = 30;
+
+            // Laser f_0
+            ctx.fillStyle = laserColor;
+            ctx.fillText(`Laser Frequency f₀: ${laserFreq.toFixed(2)}`, centerX, freqY);
+
+            // Particle f_s
+            ctx.fillStyle = particleRingColor;
+            ctx.fillText(`Doppler Shifted Frequency f_s: ${f_s < 1000 ? f_s.toFixed(2) : f_s.toExponential(2)}`, centerX, freqY + freqSpacing);
+
+            // Transition f_t
+            ctx.fillStyle = particleCoreColor;
+            ctx.fillText(`Particle Transition Frequency f_t: ${transitionFreq.toFixed(2)}`, centerX, freqY + freqSpacing * 2);
+
+            // Draw HUD (top left)
+            ctx.font = '14px "Courier New", monospace';
+            ctx.textAlign = 'left';
+            ctx.fillStyle = '#fff';
+
+            const hudText = [
+                `Velocity: ${vx.toFixed(2)}`,
+                `Position: ${x.toFixed(2)}`,
+                `Left Laser: ${leftLaserOn ? 'ON' : 'OFF'}`,
+                `Right Laser: ${rightLaserOn ? 'ON' : 'OFF'}`,
+                `Resonant (L): ${vx < 0 && leftLaserOn ? (PhysicsEngine.isResonant(laserFreq, Math.abs(vx), transitionFreq, true, resonanceTolerance) ? 'YES' : 'NO') : '-'}`,
+                `Resonant (R): ${vx > 0 && rightLaserOn ? (PhysicsEngine.isResonant(laserFreq, Math.abs(vx), transitionFreq, true, resonanceTolerance) ? 'YES' : 'NO') : '-'}`
+            ];
+
+            hudText.forEach((text, i) => {
+                ctx.fillText(text, 10, 20 + i * 18);
+            });
+        }
+
+        // Animation loop
+        function animate(currentTime) {
+            const deltaTime = (currentTime - lastTime) / 1000;  // Convert to seconds
+            lastTime = currentTime;
+
+            const timeScale = parseFloat(timeScaleSlider.value);
+            const dt = deltaTime * timeScale;
+
+            animationTime += deltaTime;
+
+            updatePhysics(dt);
+            render();
+
+            requestAnimationFrame(animate);
+        }
+
+        // Start animation
+        requestAnimationFrame(animate);
+
+        // Initial render
+        render();
+    </script>
+</body>
+</html>
