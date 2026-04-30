@@ -1,13 +1,13 @@
 ---
 title: "Doppler Cooling Simulation"
-thumbnail: null
+thumbnail: "content/doppler-cooling-simulation/images/Chirp_Demo.gif"
 caption: "Interactive 1D laser cooling sim"
 section: project
 tags: [school]
 employer: Cooper Union
 date_start: 2023-09
 date_end: 2024-05
-order: 5
+order: 4
 visible: true
 ---
 
