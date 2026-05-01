@@ -38,13 +38,13 @@ Carried **375lb system weight up a 3.5 degree ramp** with power to spare (less t
 
 All three of us wore many hats in the ideation, prototyping, design and manufacturing of this project. 
 
-**Tre Brown** — _Role TBD_
+**Tre Brown** — Engineer
 Email: tre.brown@cooper.edu · LinkedIn: _TBD_
 
-**Spencer Kirsch** — _Role TBD_
+**Spencer Kirsch** — Engineer
 Email: spencerkirh@gmail.com · LinkedIn: _TBD_
 
-**Xano Sweeting** — _Role TBD_
+**Xano Sweeting** — Engineer
 Email: xano.sweeting@gmail.com · LinkedIn: _TBD_
 
 ## Mechanical
