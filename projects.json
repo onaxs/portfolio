@@ -1140,8 +1140,8 @@
         {
           "slug": "electric-wheelchair",
           "title": "Electric Wheelchair Attachment",
-          "thumbnail": "/content/electric-wheelchair/images/D110C776-0C2B-4341-9FBE-1E8459187D18_1_105_c.jpeg",
-          "caption": "Senior Capstone Project",
+          "thumbnail": "content/electric-wheelchair/images/D110C776-0C2B-4341-9FBE-1E8459187D18_1_105_c.jpeg",
+          "caption": "Senior Capstone Project 'PAD NYC'",
           "section": "project",
           "tags": [
             "school"
@@ -1153,24 +1153,24 @@
           "visible": true,
           "headings": [
             {
-              "text": "Prototyping",
-              "anchor": "electric-wheelchair-prototyping"
+              "text": "Testing and Specs",
+              "anchor": "electric-wheelchair-testing-and-specs"
             },
             {
-              "text": "Drivetrain Design",
-              "anchor": "electric-wheelchair-drivetrain-design"
+              "text": "Team",
+              "anchor": "electric-wheelchair-team"
             },
             {
-              "text": "Battery",
-              "anchor": "electric-wheelchair-battery"
+              "text": "Mechanical",
+              "anchor": "electric-wheelchair-mechanical"
+            },
+            {
+              "text": "Electrical",
+              "anchor": "electric-wheelchair-electrical"
             },
             {
               "text": "Controls",
               "anchor": "electric-wheelchair-controls"
-            },
-            {
-              "text": "Testing",
-              "anchor": "electric-wheelchair-testing"
             }
           ],
           "images": [
@@ -1201,17 +1201,23 @@
             "content/electric-wheelchair/images/IMG_3447.JPG",
             "content/electric-wheelchair/images/IMG_3461.JPG",
             "content/electric-wheelchair/images/IMG_3475.JPG",
+            "content/electric-wheelchair/images/PAD_Final_Poster.png",
             "content/electric-wheelchair/images/Pack_ASM (5).png",
             "content/electric-wheelchair/images/Pack_ASM (6).png",
             "content/electric-wheelchair/images/Pack_ASM (7).png",
             "content/electric-wheelchair/images/cell_level_fusing.png",
+            "content/electric-wheelchair/images/hill_climb.gif",
             "content/electric-wheelchair/images/mounted-device.JPG",
             "content/electric-wheelchair/images/nickel_busbars.png",
             "content/electric-wheelchair/images/pack_asm_1-3.png",
             "content/electric-wheelchair/images/pack_asm_clear_1-1.png",
             "content/electric-wheelchair/images/pack_asm_explode_1-2.png",
             "content/electric-wheelchair/images/pack_concept_brainstorm.png",
-            "content/electric-wheelchair/images/pack_fuse_integration.png"
+            "content/electric-wheelchair/images/pack_fuse_integration.png",
+            "content/electric-wheelchair/images/profile_pics.png",
+            "content/electric-wheelchair/images/spencer_profile.png",
+            "content/electric-wheelchair/images/tre_profile.JPG",
+            "content/electric-wheelchair/images/xano_profile.png"
           ]
         },
         {
@@ -1314,8 +1320,8 @@
       {
         "slug": "electric-wheelchair",
         "title": "Electric Wheelchair Attachment",
-        "thumbnail": "/content/electric-wheelchair/images/D110C776-0C2B-4341-9FBE-1E8459187D18_1_105_c.jpeg",
-        "caption": "Senior Capstone Project",
+        "thumbnail": "content/electric-wheelchair/images/D110C776-0C2B-4341-9FBE-1E8459187D18_1_105_c.jpeg",
+        "caption": "Senior Capstone Project 'PAD NYC'",
         "section": "project",
         "tags": [
           "school"
@@ -1327,24 +1333,24 @@
         "visible": true,
         "headings": [
           {
-            "text": "Prototyping",
-            "anchor": "electric-wheelchair-prototyping"
+            "text": "Testing and Specs",
+            "anchor": "electric-wheelchair-testing-and-specs"
           },
           {
-            "text": "Drivetrain Design",
-            "anchor": "electric-wheelchair-drivetrain-design"
+            "text": "Team",
+            "anchor": "electric-wheelchair-team"
           },
           {
-            "text": "Battery",
-            "anchor": "electric-wheelchair-battery"
+            "text": "Mechanical",
+            "anchor": "electric-wheelchair-mechanical"
+          },
+          {
+            "text": "Electrical",
+            "anchor": "electric-wheelchair-electrical"
           },
           {
             "text": "Controls",
             "anchor": "electric-wheelchair-controls"
-          },
-          {
-            "text": "Testing",
-            "anchor": "electric-wheelchair-testing"
           }
         ],
         "images": [
@@ -1375,17 +1381,23 @@
           "content/electric-wheelchair/images/IMG_3447.JPG",
           "content/electric-wheelchair/images/IMG_3461.JPG",
           "content/electric-wheelchair/images/IMG_3475.JPG",
+          "content/electric-wheelchair/images/PAD_Final_Poster.png",
           "content/electric-wheelchair/images/Pack_ASM (5).png",
           "content/electric-wheelchair/images/Pack_ASM (6).png",
           "content/electric-wheelchair/images/Pack_ASM (7).png",
           "content/electric-wheelchair/images/cell_level_fusing.png",
+          "content/electric-wheelchair/images/hill_climb.gif",
           "content/electric-wheelchair/images/mounted-device.JPG",
           "content/electric-wheelchair/images/nickel_busbars.png",
           "content/electric-wheelchair/images/pack_asm_1-3.png",
           "content/electric-wheelchair/images/pack_asm_clear_1-1.png",
           "content/electric-wheelchair/images/pack_asm_explode_1-2.png",
           "content/electric-wheelchair/images/pack_concept_brainstorm.png",
-          "content/electric-wheelchair/images/pack_fuse_integration.png"
+          "content/electric-wheelchair/images/pack_fuse_integration.png",
+          "content/electric-wheelchair/images/profile_pics.png",
+          "content/electric-wheelchair/images/spencer_profile.png",
+          "content/electric-wheelchair/images/tre_profile.JPG",
+          "content/electric-wheelchair/images/xano_profile.png"
         ]
       },
       {
