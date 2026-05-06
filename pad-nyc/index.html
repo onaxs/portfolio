@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAD-NYC — an electric assist for everyday wheelchairs</title>
+<meta name="description" content="PAD-NYC is a compact, removable electric drive that helps manual wheelchair users tackle NYC's steepest hills with 15–20 miles of range.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="PAD-NYC">
+<meta property="og:description" content="A compact electric assist for everyday manual wheelchairs. 15–20 miles of range, detaches in seconds.">
+<meta property="og:image" content="https://www.xano.me/pad-nyc/images/header_photo.gif">
+<meta property="og:url" content="https://www.xano.me/pad-nyc/">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  :root {
+    --accent: #6B0F1F;
+    --accent-bright: #B83F4F;
+    --bg: #ffffff;
+    --bg-dark: #0a0a0a;
+    --bg-soft: #fafafa;
+    --fg: #111111;
+    --fg-on-dark: #f5f5f5;
+    --muted: #8a8a8a;
+    --muted-on-dark: #9aa0a6;
+    --border: #e5e5e5;
+    --max-w: 1100px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--fg-on-dark);
+    background: var(--bg-dark) center/cover no-repeat;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+      url("images/header_photo.gif");
+    padding: 4rem 1.5rem;
+    overflow: hidden;
+  }
+  .hero-inner { max-width: 900px; }
+  .hero h1 {
+    font-size: clamp(2.75rem, 8vw, 5.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    line-height: 1.05;
+  }
+  .hero h1 .glow { color: var(--accent-bright); }
+  .hero p.tagline {
+    font-size: clamp(1.05rem, 2vw, 1.4rem);
+    color: var(--fg-on-dark);
+    opacity: 0.85;
+    margin: 0 0 2.5rem;
+  }
+  .cta {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 1.05rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(107,15,31,0.45); }
+
+  /* SECTIONS */
+  section { padding: 5rem 1.5rem; }
+  .container { max-width: var(--max-w); margin: 0 auto; }
+  h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin: 0 0 1rem;
+  }
+
+  /* BLURB ROWS */
+  .blurb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .blurb:nth-of-type(even) .blurb-media { order: -1; }
+  .blurb-text p { font-size: 1.1rem; color: #333; }
+  .blurb-media img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+  }
+
+  /* SPECS */
+  .specs {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .specs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+  .spec-num {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800;
+    color: var(--fg);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .spec-num .unit { color: var(--accent); }
+  .spec-label {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  /* CAROUSEL */
+  .gallery h2 { text-align: center; margin-bottom: 2.5rem; }
+  .carousel {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 0 1.5rem;
+    scrollbar-width: auto;
+    scrollbar-color: var(--accent) #ececec;
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+  .carousel::-webkit-scrollbar { height: 10px; -webkit-appearance: none; }
+  .carousel::-webkit-scrollbar-track { background: #ececec; border-radius: 5px; }
+  .carousel::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; }
+  .carousel::-webkit-scrollbar-thumb:hover { background: var(--accent-bright); }
+  .carousel img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  /* TEAM */
+  .team { background: var(--bg-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .team h2 { text-align: center; margin-bottom: 2.5rem; }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .member { text-align: center; }
+  .member img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+  .member .name { font-weight: 700; font-size: 1.1rem; }
+  .member .role { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+  .member a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+  .member a:hover { border-bottom-color: var(--accent); }
+
+  /* TESTIMONIAL */
+  .testimonial { text-align: center; }
+  .testimonial img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+  .testimonial blockquote {
+    font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 760px;
+    margin: 0 auto 1.5rem;
+    color: var(--fg);
+    font-style: italic;
+  }
+  .testimonial blockquote::before { content: "\201C"; color: var(--accent); margin-right: 0.1em; }
+  .testimonial blockquote::after  { content: "\201D"; color: var(--accent); margin-left: 0.1em; }
+  .testimonial cite {
+    display: block;
+    font-style: normal;
+    font-size: 0.95rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* SIGNUP */
+  .signup {
+    background: var(--bg-dark);
+    color: var(--fg-on-dark);
+    text-align: center;
+    padding: 6rem 1.5rem;
+  }
+  .signup h2 { color: var(--fg-on-dark); }
+  .signup p {
+    color: var(--muted-on-dark);
+    max-width: 540px;
+    margin: 0.5rem auto 2.5rem;
+    font-size: 1.05rem;
+  }
+  .signup-form {
+    display: flex;
+    gap: 0.75rem;
+    max-width: 480px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .signup-form input[type="email"] {
+    flex: 1 1 260px;
+    padding: 0.9rem 1.2rem;
+    border: 1px solid #2a2a2a;
+    background: #151515;
+    color: var(--fg-on-dark);
+    border-radius: 999px;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .signup-form input[type="email"]:focus { border-color: var(--accent-bright); }
+  .signup-form button {
+    padding: 0.9rem 2rem;
+    background: var(--accent-bright);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .signup-form button:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(184,63,79,0.45); }
+  .signup small { display: block; margin-top: 1rem; color: var(--muted-on-dark); font-size: 0.85rem; }
+
+  /* FOOTER */
+  footer {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--border); }
+  footer a:hover { border-bottom-color: var(--accent); }
+  footer .links { margin-bottom: 0.75rem; }
+  footer .links a { margin: 0 0.75rem; }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    section { padding: 3.5rem 1.25rem; }
+    .blurb { grid-template-columns: 1fr; gap: 1.5rem; }
+    .blurb:nth-of-type(even) .blurb-media { order: 0; }
+    .specs-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 1rem; }
+    .team-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .carousel img { height: 340px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1><span class="glow">PAD</span>-NYC</h1>
+    <p class="tagline">A compact electric assist for everyday manual wheelchairs.</p>
+    <a href="#signup" class="cta">Get notified →</a>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="blurb">
+      <div class="blurb-text">
+        <h2>What it is</h2>
+        <p>A removable accessory drive for active manual wheelchair users. Custom motors and a 300 Wh battery pack carry you 15 to 20 miles per charge. The whole thing detaches in seconds, so the chair goes back to being light and transportable.</p>
+      </div>
+      <div class="blurb-media">
+        <img src="images/what_it_is.gif" alt="PAD-NYC in motion">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="blurb">
+      <div class="blurb-text">
+        <h2>How it works</h2>
+        <p>Snap on for the ride to work. Pull off to charge. The drive integrates with the chair's existing geometry without permanent modification, and the controls stay within thumb's reach.</p>
+      </div>
+      <div class="blurb-media">
+        <img src="images/how_it_works.gif" alt="Detach demonstration">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="specs">
+  <div class="container">
+    <div class="specs-grid">
+      <div>
+        <div class="spec-num">15–20<span class="unit"> mi</span></div>
+        <div class="spec-label">Range per charge</div>
+      </div>
+      <div>
+        <div class="spec-num">15<span class="unit"> mph</span></div>
+        <div class="spec-label">Top assist speed</div>
+      </div>
+      <div>
+        <div class="spec-num">300<span class="unit"> Wh</span></div>
+        <div class="spec-label">Pack capacity</div>
+      </div>
+      <div>
+        <div class="spec-num">15<span class="unit"> lb</span></div>
+        <div class="spec-label">System weight</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Tested to its limit</h2>
+  <div class="carousel">
+    <img src="images/obstacle_jump_2.gif" alt="Short Curb Hop">
+    <img src="images/header_photo.gif" alt="Hill Climb Test">
+    <img src="images/ramp_test.gif" alt="Gradient climb test">
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Made with care in NYC</h2>
+  <div class="carousel">
+    <img src="images/welding.gif" alt="Tre Welding">
+    <img src="images/machining.gif" alt="Xano Machining">
+    <img src="images/v2_testing.gif" alt="Spencer Testing">
+  </div>
+</section>
+
+<section class="team">
+  <div class="container">
+    <h2>The team</h2>
+    <div class="team-grid">
+      <div class="member">
+        <img src="images/team_1.jpg" alt="Tre Brown">
+        <div class="name">Tre Brown</div>
+        <div class="role">Engineer</div>
+        <a href="mailto:tre.brown@cooper.edu">tre.brown@cooper.edu</a>
+      </div>
+      <div class="member">
+        <img src="images/team_2.png" alt="Spencer Kirsch">
+        <div class="name">Spencer Kirsch</div>
+        <div class="role">Engineer</div>
+        <a href="mailto:spencerkirh@gmail.com">spencerkirh@gmail.com</a>
+      </div>
+      <div class="member">
+        <img src="images/team_3.png" alt="Xano Sweeting">
+        <div class="name">Xano Sweeting</div>
+        <div class="role">Engineer</div>
+        <a href="mailto:xano.sweeting@gmail.com">xano.sweeting@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="container">
+    <img src="images/victor_test.gif" alt="Client portrait">
+    <blockquote>This thing is such a game changer</blockquote>
+    <cite>— Victor Calise, former NYC ADA Comissioner</cite>
+  </div>
+</section>
+
+<section class="signup" id="signup">
+  <h2>Be the first to know</h2>
+  <p>Launch updates, build progress, and early access — no spam, unsubscribe anytime.</p>
+
+  <!--
+    EmailOctopus setup:
+    1. Sign up at https://emailoctopus.com (free up to 2,500 subscribers).
+    2. Lists → Create list → name "PAD-NYC".
+    3. Forms → Create form → Embedded → choose the "no-styling" / minimal option.
+    4. Replace this form's action URL + hidden inputs with what they generate;
+       keep the existing input/button so the page styling continues to apply.
+  -->
+  <form class="signup-form" action="REPLACE_WITH_EMAILOCTOPUS_ACTION_URL" method="post">
+    <input type="email" name="field_0" placeholder="you@email.com" required aria-label="Email address">
+    <button type="submit">Subscribe</button>
+  </form>
+  <small>Powered by EmailOctopus.</small>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="https://www.xano.me">portfolio</a>
+  </div>
+  <div>Cooper Union Startup · PAD NYC · 2025–2026</div>
+</footer>
+
+</body>
+</html>
