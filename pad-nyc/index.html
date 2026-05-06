@@ -146,16 +146,31 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 0 0 1.5rem;
-    scrollbar-width: auto;
-    scrollbar-color: var(--accent) #ececec;
+    padding: 0;
     max-width: var(--max-w);
     margin: 0 auto;
+    scrollbar-width: none;
   }
-  .carousel::-webkit-scrollbar { height: 10px; -webkit-appearance: none; }
-  .carousel::-webkit-scrollbar-track { background: #ececec; border-radius: 5px; }
-  .carousel::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; }
-  .carousel::-webkit-scrollbar-thumb:hover { background: var(--accent-bright); }
+  .carousel::-webkit-scrollbar { display: none; }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: var(--border);
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .dot:hover { background: var(--accent-bright); }
+  .dot.active { background: var(--accent); transform: scale(1.4); }
   .carousel img {
     flex: 0 0 100%;
     width: 100%;
@@ -377,19 +392,19 @@
       <div class="member">
         <img src="images/team_1.jpg" alt="Tre Brown">
         <div class="name">Tre Brown</div>
-        <div class="role">Engineer</div>
-        <a href="mailto:tre.brown@cooper.edu">tre.brown@cooper.edu</a>
+        <div class="role">Mechanical Engineer</div>
+        <a href="mailto:donzellbrown2003@gmail.com">donzellbrown2003@gmail.com</a>
       </div>
       <div class="member">
         <img src="images/team_2.png" alt="Spencer Kirsch">
         <div class="name">Spencer Kirsch</div>
-        <div class="role">Engineer</div>
+        <div class="role">Mechanical Engineer</div>
         <a href="mailto:spencerkirh@gmail.com">spencerkirh@gmail.com</a>
       </div>
       <div class="member">
         <img src="images/team_3.png" alt="Xano Sweeting">
         <div class="name">Xano Sweeting</div>
-        <div class="role">Engineer</div>
+        <div class="role">Mechanical Engineer</div>
         <a href="mailto:xano.sweeting@gmail.com">xano.sweeting@gmail.com</a>
       </div>
     </div>
@@ -429,6 +444,40 @@
   </div>
   <div>Cooper Union Startup · PAD NYC · 2025–2026</div>
 </footer>
+
+<script>
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const images = Array.from(carousel.querySelectorAll('img'));
+    if (images.length < 2) return;
+
+    const dots = document.createElement('div');
+    dots.className = 'dots';
+    images.forEach((img, i) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'dot';
+      dot.setAttribute('aria-label', `Go to image ${i + 1}`);
+      dot.addEventListener('click', () => {
+        carousel.scrollTo({ left: i * carousel.clientWidth, behavior: 'smooth' });
+      });
+      dots.appendChild(dot);
+    });
+    carousel.parentNode.insertBefore(dots, carousel.nextSibling);
+
+    const dotEls = Array.from(dots.children);
+    dotEls[0].classList.add('active');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+          const idx = images.indexOf(entry.target);
+          dotEls.forEach((d, i) => d.classList.toggle('active', i === idx));
+        }
+      });
+    }, { root: carousel, threshold: 0.6 });
+    images.forEach(img => observer.observe(img));
+  });
+</script>
 
 </body>
 </html>
