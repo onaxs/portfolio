@@ -246,6 +246,10 @@
     margin: 0.5rem auto 2.5rem;
     font-size: 1.05rem;
   }
+  .eo-form-wrap {
+    max-width: 520px;
+    margin: 0 auto;
+  }
   .signup-form {
     display: flex;
     gap: 0.75rem;
@@ -338,7 +342,7 @@
         <p>Snap on for the ride to work. Pull off to charge. The drive integrates with the chair's existing geometry without permanent modification, and the controls stay within thumb's reach.</p>
       </div>
       <div class="blurb-media">
-        <img src="images/how_it_works.gif" alt="Detach demonstration">
+        <img src="images/mounting.jpeg" alt="Detach demonstration">
       </div>
     </div>
   </div>
@@ -423,19 +427,9 @@
   <h2>Be the first to know</h2>
   <p>Launch updates, build progress, and early access — no spam, unsubscribe anytime.</p>
 
-  <!--
-    EmailOctopus setup:
-    1. Sign up at https://emailoctopus.com (free up to 2,500 subscribers).
-    2. Lists → Create list → name "PAD-NYC".
-    3. Forms → Create form → Embedded → choose the "no-styling" / minimal option.
-    4. Replace this form's action URL + hidden inputs with what they generate;
-       keep the existing input/button so the page styling continues to apply.
-  -->
-  <form class="signup-form" action="REPLACE_WITH_EMAILOCTOPUS_ACTION_URL" method="post">
-    <input type="email" name="field_0" placeholder="you@email.com" required aria-label="Email address">
-    <button type="submit">Subscribe</button>
-  </form>
-  <small>Powered by EmailOctopus.</small>
+  <div class="eo-form-wrap">
+    <script async src="https://eocampaign1.com/form/8f7d4b80-48fa-11f1-af56-3744e15c4d6e.js" data-form="8f7d4b80-48fa-11f1-af56-3744e15c4d6e"></script>
+  </div>
 </section>
 
 <footer>
